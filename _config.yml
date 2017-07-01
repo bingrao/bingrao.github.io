@@ -2,7 +2,7 @@
 
 # Website settings
 title: Bing
-description: Bing's blog, which is based on github and jekyll tools
+description: Bing's blog, which is based on github pages and jekyll tools
 keywords: Bing, UCF, Jekyll, github
 baseurl: # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: http://bingrao.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
