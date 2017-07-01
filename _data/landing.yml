@@ -30,6 +30,12 @@
   tpl: blog.html
   css: testimonials navy-section
 
+- id: publication
+  i18n: nav.publication
+  name: Publication
+  tpl: publication.html
+  css: 
+
 - id: links
   i18n: nav.link
   name: Links
