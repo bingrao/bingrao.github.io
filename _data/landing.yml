@@ -34,7 +34,7 @@
   i18n: nav.publication
   name: Publication
   tpl: publication.html
-  css: 
+  css: navy-section
 
 - id: links
   i18n: nav.link
