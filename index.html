@@ -59,44 +59,24 @@ permalink: /
 
   <!-- list how many slides does this site have, for now there are three slides-->
   <ol class="carousel-indicators">
-    <li data-target="#inSlider" data-slide-to="0" class="active"></li>
-    <li data-target="#inSlider" data-slide-to="1"></li>
-    <li data-target="#inSlider" data-slide-to="2"></li>
+    {% for s in site.data.slides %}
+      {% assign loopindex = forloop.index0 %}
+      <li data-target="#inSlider" data-slide-to="{{ loopindex }}" {% if loopindex == 0 %} class="active" {% endif %}> {{ loopindex }}</li>
+    {% endfor %}
   </ol>
 
   <!-- Set the slides for each element -->
   <div class="carousel-inner" role="listbox">
-    <!-- Set the first slides and set it active -->
-    <div class="item active">
-      <div class="container">
-        <div class="carousel-caption"></div>
-        <div class="carousel-image wow zoomIn">
-          <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
+    {% for slide in site.data.slides %}
+        {% assign loopindex = forloop.index0 %}
+        <div class = "item {% if loopindex == 0 %} active {% endif %}">
+          <div class="container">
+              <div class="carousel-caption {% if loopindex != 0 %} blank {% endif %}"></div>
+          </div>
+          <!-- Set background for slide in css -->
+          <div class= "{{ slide.css}}" ></div>
         </div>
-      </div>
-      <!-- Set background for slide in css or you can use img tag to define here directly-->
-      <div class="header-back one"></div>
-    </div>
-    <!-- Set the second slide -->
-    <div class="item">
-      <div class="container">
-        <div class="carousel-caption blank"></div>
-      </div>
-      <!-- Set background for slide in css -->
-      <div class="header-back two"></div>
-    </div>
-
-    <!-- Set the third slide -->
-    <div class="item">
-      <div class="container">
-        <div class="carousel-caption blank"></div>
-      </div>
-      <!-- Set background for slide in css -->
-      <div class="header-back two">
-        <img src="static/assets/img/landing/header_one.jpg" alt="header one">
-      </div>
-    </div>
-
+    {% endfor %}
   </div>
 
   <!-- Set up the previous command to go back the former slide -->
