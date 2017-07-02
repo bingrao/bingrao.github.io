@@ -61,17 +61,16 @@ permalink: /
   <ol class="carousel-indicators">
     {% for s in site.data.slides %}
       {% assign loopindex = forloop.index0 %}
-      <li data-target="#inSlider" data-slide-to="{{ loopindex }}" {% if loopindex == 0 %} class="active" {% endif %}> {{ loopindex }}</li>
+      <li data-target="#inSlider" data-slide-to="{{ loopindex }}" class=" {{ s.active }}"></li>
     {% endfor %}
   </ol>
 
   <!-- Set the slides for each element -->
   <div class="carousel-inner" role="listbox">
     {% for slide in site.data.slides %}
-        {% assign loopindex = forloop.index0 %}
-        <div class = "item {% if loopindex == 0 %} active {% endif %}">
+        <div class = "item {{ slide.active }}">
           <div class="container">
-              <div class="carousel-caption {% if loopindex != 0 %} blank {% endif %}"></div>
+              <div class="carousel-caption blank"></div>
           </div>
           <!-- Set background for slide in css -->
           <div class= "{{ slide.css}}" >
