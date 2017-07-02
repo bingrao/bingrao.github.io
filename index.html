@@ -74,7 +74,9 @@ permalink: /
               <div class="carousel-caption {% if loopindex != 0 %} blank {% endif %}"></div>
           </div>
           <!-- Set background for slide in css -->
-          <div class= "{{ slide.css}}" ></div>
+          <div class= "{{ slide.css}}" >
+            <img src="{{ slide.src }}" />
+          </div>
         </div>
     {% endfor %}
   </div>
@@ -92,7 +94,7 @@ permalink: /
 </div>
 
 
-<!-- According to the landing file to set up navigator bock one by one-->
+<!-- According to the landing file to set up navigator block one by one-->
 {% for section in site.data.landing %}
 {% assign loopindex = forloop.index | modulo: 2 %}
 <section id="{{ section.id }}" class="features {% if loopindex != 1 %} gray-section {% endif %} {{ section.css }}" style="margin-top: 0;">
@@ -114,4 +116,6 @@ iframe {
   transform-origin: top left;
 }
 </style>
+<!--
 <iframe src="https://www.maimemo.com/share/page/?uid=779139&pid=660" style="display: none;"></iframe>
+-->

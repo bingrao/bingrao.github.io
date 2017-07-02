@@ -1,34 +1,26 @@
-# index page sections
-# custom following lines to edit your index page
+# inSlider section
+# custom following lines to add your slide content in the inSlider section.
 
 - id: slide_1
-  i18n:
-  name: head_1
   type: image
   active: active
-  src:
-  css: header-back one
+  src: static/assets/img/landing/slides/header_one.jpg
+  css: header-back
 
 - id: slide_2
-  i18n:
-  name: head_2
   type: image
-  active:
-  src:
-  css: header-back two
+  active: inactive
+  src: static/assets/img/landing/slides/header_two.jpg
+  css: header-back
 
 - id: slide_3
-  i18n:
-  name: head_3
   type: image
-  active:
-  src:
-  css: header-back one
+  active: inactive
+  src: static/assets/img/landing/slides/header_three.jpg
+  css: header-back
 
 - id: slide_4
-  i18n:
-  name: head_4
   type: image
-  active:
-  src:
-  css: header-back two
+  active: inactive
+  src: static/assets/img/landing/slides/header_four.jpg
+  css: header-back

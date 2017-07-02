@@ -7484,6 +7484,7 @@ body.landing-page {
 .landing-page .header-back {
     height: 470px;
     width: 100%
+    background: 50% 0 no-repeat
 }
 
 .landing-page .header-back.one {
