@@ -63,3 +63,5 @@ kramdown:
   syntax_highlighter: rouge
 
 incremental: BOOL
+
+permalink: /blog/:categories/:year/:month/:day/:title.html
