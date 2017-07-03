@@ -8,10 +8,22 @@
 	{% endif %}
 
 <body id="page-top" class="landing-page">
+	{%	assign layout = page.layout %}
+	{% case layout %}
+		{% when 'default' %}
 
-	{% if page.title != 'index' %}
-	    {% include blog_header.html %}
-	{% endif %}
+		{% when 'blog' %}
+			{% include blog_header.html %}
+		{% when 'home' %}
+
+		{% when 'post' %}
+			{% include post_header.html %}
+		{% when 'publication' %}
+			{% include publication_header.html %}
+		{% else %}
+			There is no case for layout {{ page.layout }} - title {{ page.title }}
+	{% endcase%}
+
 
     {{ content }}
 
