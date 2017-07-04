@@ -7,17 +7,26 @@ permalink: /
 <div class="navbar-wrapper">
   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-
       <!-- Define navigations -->
       <div class="dropdown">
-        <button class="dropbtn">{{ site.title }}</button>
+        <button class="dropbtn">
+          <a style="color:#FDFEFE" href="{{ "/" | prepend: site.baseurl }}">
+            {{ site.title }}
+            <b class="caret"></b>
+          </a>
+        </button>
         <div class="dropdown-content">
           {% for section in site.data.landing %}
-            <a class="page-scroll" href="#{{ section.id }}">
+            {% if section.id == 'blog' or section.id == 'publication' %}
+              {% assign section_id= section.id | prepend: "/" | prepend: site.baseurl %}
+            {% else %}
+              {% assign section_id= section.id | prepend: "#"%}
+            {% endif %}
+            <a class="page-scroll" href="{{ section_id }}">
               <span data-i18n="{{ section.i18n }}">
                 {{ section.name }}
               </span>
-          </a>
+            </a>
           {%  endfor %}
         </div>
       </div>
@@ -35,7 +44,6 @@ permalink: /
           {% endfor %}
         </ul>
       </div>
-
 
     </div>
   </nav>
