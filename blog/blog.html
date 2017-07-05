@@ -11,16 +11,18 @@ permalink: /blog/
       {% if tag.name != 'Blog' %}
         <div class="col-sm-4">
           <div class="panel panel-default">
+            <!--
             <div class="panel-heading text-center">
               {{ tag.name }}
             </div>
+            -->
             <div class="panel-body">
               <a href="{{ tag.href | prepend: site.baseurl }}">
-                <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+                <img src="{{  tag.background }}" class="img-responsive" style="width:100%" alt="Image">
               </a>
             </div>
             <div class="panel-footer">
-              Buy 50 mobiles and get a gift card
+              {{ tag.desc }}
             </div>
           </div>
         </div>

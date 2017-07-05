@@ -1,33 +1,45 @@
 # blog page sections
 - name: Blog
   href: /blog/
+  background: /static/assets/img/blog/ad-next-card.png
+  desc: Buy 50 mobiles and get a gift card
 
 # edit following lines to custom your blog page, make sure name is the same as href but capitalized first letter(except HTML)
 #- name: Python
 #  href: /python/
 - name: Language
   href: /blog/language/
+  background: /static/assets/img/blog/india-nightlight-composite-card.png
+  desc: Buy 50 mobiles and get a gift card
 
 - name: System
   href: /blog/system/
+  background: /static/assets/img/blog/nasa-card.jpg
+  desc: Buy 50 mobiles and get a gift card
 
 #- name: Linux
 #  href: /blog/linux/
 
 - name: BigData
   href: /blog/bigdata/
+  background: /static/assets/img/blog/openaq-card.jpg
+  desc: Buy 50 mobiles and get a gift card
 
 #- name: HTML
 #  href: /blog/html/
 
 - name: Database
   href: /blog/database/
+  background: /static/assets/img/blog/people-voting-card.jpg
+  desc: Buy 50 mobiles and get a gift card
 
 #- name: Mac
 #  href: /blog/mac/
 
 - name: Life
   href: /blog/life/
+  background: /static/assets/img/blog/pursue-card.jpg
+  desc: Buy 50 mobiles and get a gift card
 
 # Don't display donation page: change donation to off at file '_config.yml'
 #- name: Donate
