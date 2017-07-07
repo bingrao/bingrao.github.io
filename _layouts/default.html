@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-
+	<!-- header -->
 	{% if page.title != 'index' %}
-	    {% include head.html %}
+	    {% include header/head_default.html %}
 	{% else %}
-		{% include index_head.html %}
+		{% include header/head_index.html %}
 	{% endif %}
-
+<!-- body -->
 <body id="page-top" class="landing-page">
 	{%	assign layout = page.layout %}
 	{% case layout %}
 		{% when 'default' %}
 
 		{% when 'blog' %}
-			{% include blog_header.html %}
+			{% include navigation/nav_blog.html %}
 		{% when 'home' %}
 
 		{% when 'post' %}
-			{% include post_header.html %}
+			{% include navigation/nav_post.html %}
 		{% when 'publication' %}
-			{% include publication_header.html %}
+			{% include navigation/nav_publication.html %}
 		{% else %}
 			There is no case for layout {{ page.layout }} - title {{ page.title }}
 	{% endcase%}
 
 
-    {{ content }}
+  {{ content }}
 
+
+	<!-- foot -->
 	{% if page.title != 'index' %}
-	    {% include foot.html %}
+	    {% include foot/foot_default.html %}
 	{% else %}
-		{% include index_foot.html %}
+		{% include foot/foot_index.html %}
 	{% endif %}
-
 </body>
 </html>
