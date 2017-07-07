@@ -40,4 +40,5 @@ kramdown:
 
 incremental: BOOL
 
-permalink: /blog/:categories/:year/:month/:day/:title.html
+#permalink: /blog/:categories/:year/:month/:day/:title.html
+permalink: /blog/post/:year/:month/:day/:title.html
