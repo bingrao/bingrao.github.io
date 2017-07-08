@@ -4,8 +4,8 @@ title: Hibernate缓存配置笔记
 categories: [Language]
 tags:   java, hibernate
 ---
-* Do not remove this line (it will not be displayed)
-{:toc}
+
+
 Hibernate中提供了两级Cache，第一级别的缓存是Session级别的缓存，这一级别的缓存由hibernate管理的，一般情况下无需进行干预；第二级别的缓存是SessionFactory级别的缓存，它是属于进程范围或群集范围的缓存,这一级别的缓存可以进行配置和更改，并且可以动态加载和卸载。 Hibernate还为查询结果提供了一个查询缓存，它依赖于第二级缓存。
 
 **一级缓存和二级缓存的要点**
