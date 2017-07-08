@@ -34,7 +34,7 @@
 #- name: Linux
 #  href: /blog/linux/
 
-- name: BigData
+- name: Bigdata
   href: /blog/bigdata/
   background: /static/assets/img/blog/openaq-card.jpg
   desc: Buy 50 mobiles and get a gift card
