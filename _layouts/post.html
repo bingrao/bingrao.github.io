@@ -1,8 +1,13 @@
 ---
 layout: default
 ---
-
-<div class="wrapper wrapper-content  animated fadeInRight article">
+<script src="{{ "/static/js/toc.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#toc').toc();
+});
+<div id="toc"></div>
+<div class="wrapper wrapper-content  animated fadeInRight art icle">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
             <div class="ibox">
@@ -41,6 +46,37 @@ layout: default
                             </div>
                         </div>
                     </div>
+
+                    <article class="unit-article layout-post">
+                        <div class="unit-inner unit-article-inner">
+                            <div class="content">
+                                <div class="bd">
+                                    <div class="entry-content">
+                                        {{ post.content }}
+                                    </div><!-- entry-content -->
+                                </div><!-- bd -->
+                            </div><!-- content -->
+                        </div><!-- unit-inner -->
+                    </article>
+
+                    <div style="margin-top:10px;margin-bottom:10px">
+                      {%if page.previous%}
+                      <span class="next">
+                        上篇：
+                        <a href="{{page.previous.url}}">
+                          {{page.previous.title}}
+                        </a>
+                      </span>
+                      {%endif%}
+                      {%if page.next%}
+                      <span class="prev">
+                        下篇：
+                        <a href="{{page.next.url}}">
+                          {{page.next.title}}
+                        </a>
+                      </span>
+                      {%endif%}
+                    </div>
                     <br>
                     <div class="row">
                         <div class="col-lg-12">
@@ -60,5 +96,4 @@ layout: default
             </div>
         </div>
     </div>
-
 </div>

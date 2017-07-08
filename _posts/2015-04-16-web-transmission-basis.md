@@ -7,7 +7,8 @@ description: 理论上，视频或邮件信息是能够以大块非中断型流�
 tags:		[web, 网络传输]
 ---
 
-
+* Do not remove this line (it will not be displayed)
+{:toc}
 
 示例：Web服务器向Http客户端传送数据的过程:
  

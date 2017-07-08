@@ -46,3 +46,9 @@
 .dropdown:hover .dropbtn {
     background-color: #3e8e41;
 }
+
+div#toc {
+    padding: 10px;
+    border: 1px solid #aaa;
+    display: inline-block !important;
+}
