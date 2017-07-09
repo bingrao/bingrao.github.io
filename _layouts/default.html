@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-	{%	assign layout = page.layout %}
-	<!-- header -->
-	{% if page.title != 'index' %}
-	    {% include header/head_default.html %}
-	{% else %}
-		{% include header/head_index.html %}
-	{% endif %}
-
-	{% if page.layout == 'post' %}
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	{% endif %}
-<!-- body -->
-<body id="page-top" class="landing-page">
-	{% case layout %}
-		{% when 'default' %}
-
-		{% when 'blog' %}
+{%	assign layout = page.layout %}
+{% case layout %}
+	{% when 'default' %}
+		<!-- header -->
+		<!-- body -->
+		<body id="page-top" class="landing-page">
+		</body>
+	{% when 'home' %}
+		<!-- header -->
+			{% include header/head_index.html %}
+		<!-- body -->
+		<body id="page-top" class="landing-page">
+			{{ content }}
+			{% include foot/foot_index.html %}
+		</body>
+	{% when 'blog' %}
+		<!-- header -->
+			{% include header/head_blog.html %}
+		<!-- body -->
+		<body id="page-top" class="landing-page">
 			{% include navigation/nav_blog.html %}
-		{% when 'home' %}
-
-		{% when 'post' %}
+			{{ content }}
+			{% include foot/foot_blog.html %}
+		</body>
+	{% when 'post' %}
+		<!-- header -->
+			{% include header/head_post.html %}
+		<!-- body -->
+		<body id="page-top" class="landing-page">
 			{% include navigation/nav_post.html %}
-		{% when 'publication' %}
+			{{ content }}
+			{% include foot/foot_post.html %}
+		</body>
+	{% when 'publication' %}
+		<!-- header -->
+			{% include header/head_publication.html %}
+		<!-- body -->
+		<body id="page-top" class="landing-page">
 			{% include navigation/nav_publication.html %}
-		{% else %}
-			There is no case for layout {{ page.layout }} - title {{ page.title }}
-	{% endcase%}
-
-
-  {{ content }}
-
-
-	<!-- foot -->
-	{% if page.title != 'index' %}
-	    {% include foot/foot_default.html %}
+			{{ content }}
+			{% include foot/foot_publication.html %}
+		</body>
 	{% else %}
-		{% include foot/foot_index.html %}
-	{% endif %}
-</body>
+		There is no case for layout {{ page.layout }} - title {{ page.title }}
+{% endcase%}
 </html>
