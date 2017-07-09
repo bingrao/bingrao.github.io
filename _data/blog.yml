@@ -2,7 +2,7 @@
 - name: Blog
   href: /blog/
   background: /static/assets/img/blog/ad-next-card.png
-  desc: Buy 50 mobiles and get a gift card
+  desc: Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card
   subs:
     - scala
     - java
@@ -17,7 +17,7 @@
 - name: Language
   href: /blog/language/
   background: /static/assets/img/blog/india-nightlight-composite-card.png
-  desc: Buy 50 mobiles and get a gift card
+  desc: Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card
   subs:
     - scala
     - java
