@@ -11,7 +11,7 @@ img_path: static/assets/img/blog  # url should be '/homepage/static/assets/img/b
 
 # comment
 disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your configuration; if not, comment following two lines.
-  name: bingrao
+  name: Bing
   public_key: e5tXhjmwy3ZNBE0KeMucnn49oUEzqBYZorZqvQnRx1Ha3K1vyXazCe5pHBeIPLK1
 
 # analytics
