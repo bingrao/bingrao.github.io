@@ -22,11 +22,26 @@
                 </a>
               </button>
               <div class="dropdown-content">
-                {% for section in site.data.blog %}
-                  <a href="{{ section.href | prepend: site.baseurl }}">
-                    {{ section.name }}
-                  </a>
-                {% endfor %}
+                {%  if page.title == 'Blog' %}
+                  {% for section in site.data.landing %}
+                    {% if section.id == 'blog' or section.id == 'publication' %}
+                      {% assign section_id= section.id | prepend: "/" | prepend: site.baseurl %}
+                    {% else %}
+                      {% assign section_id= section.id | prepend: "#"%}
+                    {% endif %}
+                    <a class="page-scroll" href="{{ section_id }}">
+                      <span data-i18n="{{ section.i18n }}">
+                        {{ section.name }}
+                      </span>
+                    </a>
+                  {%  endfor %}
+                {%  else  %}
+                  {% for section in site.data.blog %}
+                    <a href="{{ section.href | prepend: site.baseurl }}">
+                      {{ section.name }}
+                    </a>
+                  {% endfor %}
+                {%  endif %}
               </div>
             </div>
         </div>
