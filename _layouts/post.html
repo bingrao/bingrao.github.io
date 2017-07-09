@@ -1,8 +1,23 @@
 ---
 layout: default
 ---
-<div class="toc no-print"></div>
-<div class="wrapper wrapper-content  animated fadeInRight art icle">
+
+
+<!-- Sidebar -->
+<div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+  <div class="toc no-print"></div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-teal">
+  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+  <div class="w3-container">
+    <h1>My Page</h1>
+  </div>
+</div>
+
+<div class="w3-container wrapper wrapper-content  animated fadeInRight art icle">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
             <div class="ibox">
@@ -13,7 +28,9 @@ layout: default
                       {% endfor %}
                     </div>
                     <div class="text-center article-title">
-                    <span class="text-muted"><i class="fa fa-clock-o"></i> {{ page.date | date: "%-d %b %Y" }}</span>
+                    <span class="text-muted"><i class="fa fa-clock-o">
+                      </i>{{ page.date | date: "%-d %b %Y" }}
+                    </span>
                         <h1>
                             {{ page.title }}
                         </h1>
@@ -93,6 +110,15 @@ layout: default
     </div>
 </div>
 
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
 <script type="text/javascript">
 $(document).ready(function() {
     $('#toc').toc();
