@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+	{%	assign layout = page.layout %}
 	<!-- header -->
 	{% if page.title != 'index' %}
 	    {% include header/head_default.html %}
 	{% else %}
 		{% include header/head_index.html %}
 	{% endif %}
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+	{% if page.layout == 'post' %}
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	{% endif %}
 <!-- body -->
 <body id="page-top" class="landing-page">
-	{%	assign layout = page.layout %}
 	{% case layout %}
 		{% when 'default' %}
 

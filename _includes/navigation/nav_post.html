@@ -13,45 +13,49 @@
 
 <div class="navbar-wrapper">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="dropdown">
-              <button class="dropbtn">
-                <a style="color:#FDFEFE" href="{{ "/" | prepend: site.baseurl }}">
-                  {{ site.title }}
-                  <b class="caret"></b>
-                </a>
-              </button>
-              <div class="dropdown-content">
-                {% for section in site.data.blog %}
-                  <a href="{{ section.href | prepend: site.baseurl }}">
-                    {{ section.name }}
-                  </a>
-                {% endfor %}
-              </div>
+        <div class="container w3-teal col-xs-12">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="w3-sidebar w3-bar-block w3-border-right" style="display:none" id="mySidebar">
+                  <button onclick="w3_close()" class="w3-bar-item w3-large">Close &times;</button>
+                  <div class="toc no-print w3-blue"></div>
+                </div>
+
+                <div class="w3-teal">
+                  <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">☰</button>
+                </div>
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="{{ "blog/" | prepend: site.baseurl }}">{{ site.index.home }}</a></li>
+                    {% for tag in site.data.blog %}
+                        {% if tag.name != 'Donate' or site.donation %}
+                        {% if page.title == tag.name %}
+                        <li class="active">
+                        {% else %}
+                        <li>
+                        {% endif %}
+                        <a class="page-scroll" href="{{ tag.href | prepend: site.baseurl }}">{{ tag.name }}</a></li>
+                        {% endif %}
+                    {% endfor %}
+                </ul>
             </div>
         </div>
     </nav>
 </div>
-<div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-            <div class="container">
-                <div class="carousel-caption">
-                </div>
-                <div class="carousel-image wow zoomIn">
-                    <!-- <img src="static/img/landing/laptop.png" alt="laptop"/> -->
-                </div>
-            </div>
-            <!-- Set background for slide in css -->
-            <div style="height: 470px;width: 100%; background: url(/static/assets/img/landing/header_one.jpg) 50% 0 no-repeat;" class="col-lg-12 text-center wow zoomIn" id="i18_blog">
-              <!--
-                <div style="height: 200px;"></div>
-                <a class="btn btn-lg btn-default btn-rounded btn-outline wow; bounceIn" href="{{ "/blog/" | prepend: site.baseurl }}">
-                  <span data-i18n="blog.my_blog">My Blog</span>
-                </a>
-                <div style="height: 200px;"></div>
-              -->
-            </div>
-        </div>
-    </div>
-</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
