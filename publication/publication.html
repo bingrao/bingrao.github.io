@@ -3,10 +3,93 @@ layout: publication
 title: Publication
 permalink: /publication/
 ---
+<div class="container">
+  {% comment %}
+  =======================
+  The following part extracts all public date from your posts
+  and sort tags, so that you do not need to manually
+  collect your tags to a place.
+  =======================
+  {% endcomment %}
+  {% assign rawtags = "" %}
+  {% for post in site.data.publication %}
+  	{% assign ttags = post.year | join:'|' | append:'|' %}
+  	{% assign rawtags = rawtags | append:ttags %}
+  {% endfor %}
+  {% assign rawtags = rawtags | split:'|' | sort  | reverse %}
 
-<div class="row">
-    <div class="col-lg-12 text-center">
-        <div class="navy-line"></div>
-        <h1>Latest Publication</h1>
-    </div>
+  {% comment %}
+  =======================
+  The following part removes dulpicated
+  tags and invalid tags like blank tag.
+  =======================
+  {% endcomment %}
+  {% assign tags = "" %}
+  {% for tag in rawtags %}
+  	{% if tag != "" %}
+  		{% if tags == "" %}
+  			{% assign tags = tag | split:'|' %}
+  		{% endif %}
+  		{% unless tags contains tag %}
+  			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+  		{% endunless %}
+  	{% endif %}
+  {% endfor %}
+  
+  <div class="row">
+      <div class="col-lg-12 text-center">
+          <div class="navy-line"></div>
+          <h1>Publications</h1>
+      </div>
+  </div>
+
+  <div class="row features-block"></div>
+  <div class=MsoNormal align=center style='text-align:center'>
+    <span style='mso-fareast-font-family:"Times New Roman"'>
+      <hr size=2 width="100%" align=center>
+    </span>
+  </div>
+  <div class="row features-block col-lg-offset-3">
+    {%  for year in tags %}
+      <p><em><b><span>
+        {{ year }}:<o:p></o:p>
+      </span></b></em></p>
+      <table style="color:Gray" border=0 cellpadding=0>
+        {%  for public in site.data.publication %}
+            {%  if public.year == year  %}
+              <tr>
+                <td>
+                  <p>
+                    <span>
+                      <a href="{{ public.org_href }}">{{ public.organization }}</a><o:p></o:p>
+                    </span>
+                  </p>
+                </td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>
+                  <span>
+                    <span><strong>
+                      <b>{{ public.title }}</b>
+                    </strong></span>
+                    <span><br></span>
+                    <span>{{ public.author }}</span>
+                    <span><br></span>
+                    <span>{{ public.booktitle }}</span>
+                    <span><br></span>
+                    </span>
+                      {%  if public.paper_link %}
+                        [<a href="../papers/fang-thesis.pdf">PDF</a>]
+                      {% endif %}
+                      {%  if public.slide_link %}
+                        [<a href="../slides/fang-defense.pdf">Slides for Defense</a>]
+                      {% endif %}
+                    </span>
+                </td>
+              </tr>
+            {% endif %}
+        {%  endfor %}
+      </table>
+      <p></p>
+    {% endfor %}
+  </div>
 </div>
