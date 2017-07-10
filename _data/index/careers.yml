@@ -1,29 +1,64 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Company A
-    i18n: company_a
+    detail: University of Central Florida, Orlando, Fl, USA
+    i18n: ucf_phd
+    href: https://www.ucf.edu/
   desc:
-    detail: I worked at Company A ...
-    i18n: company_a_desc
+    detail: I am a PhD candidate who designs and analyzes parallel computing system for Big Data and Data-intensive Computing System under the supervision of <a href="http://www.cs.ucf.edu/~lwang/">Dr. Liqiang Wang</a>.
+    i18n: ucf_phd_desc
   date:
-    detail: Apr. 2016
-    i18n: company_a_date
+    detail: July. 2016 to Present
+    i18n: ucf_phd_date
   job:
-    detail: CTO
-    i18n: company_a_job
+    detail: Phd Condidate
+    i18n: ucf_phd_job
+  icon: fa-plus-square
+
+
+- name:
+    detail: University of Central Florida, Orlando, Fl, USA
+    i18n: ucf_master
+    href: https://www.ucf.edu/
+  desc:
+    detail: I was a master student in computer science.
+    i18n: ucf_master_desc
+  date:
+    detail: Augest. 2015 to Augest. 2017
+    i18n: ucf_master_date
+  job:
+    detail: Master student
+    i18n: company_b_job
   icon: fa-plus-square
 
 - name:
-    detail: Company B
-    i18n: company_b
+    detail: Elivebuy Co., Ltd., Shenzhen, GD, China
+    i18n: elivebuy
+    href: http://www.elivebuy.com/
   desc:
-    detail: I worked at Company B ...
-    i18n: company_b_desc
+    detail: I worked at Elivebuy Co., Ltd., Shenzhen as an IT & Control Manager to develop and maintain collaborative office system; coordinate and manage sales and logistics deapartment.
+    i18n: elivebuy_desc
   date:
-    detail: Jun. 2015
-    i18n: company_b_date
+    detail: March. 2014 to Augest. 2015
+    i18n: elivebuy_date
   job:
-    detail: Full Stack Developer
-    i18n: company_b_job
+    detail: IT & Control Manager
+    i18n: elivebuy_job
+  icon: fa-plus-square
+
+
+
+- name:
+    detail: MacroSAN Technologies Co.,Ltd., Shenzhen, GD, China.
+    i18n: macrosan
+    href: http://www.macrosan.com/
+  desc:
+    detail: I worked at MacroSAN as a Driven Software Development Engineer to develop and maintain Linux kernel model, such as Direct Memory Access(DMA) and MSGPIO network models.
+    i18n: macrosan_desc
+  date:
+    detail: February. 2012 to March. 2014
+    i18n: macrosan_date
+  job:
+    detail: Driven Software Development Engineer
+    i18n: macrosan_job
   icon: fa-plus-square
