@@ -1,7 +1,7 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: University of Central Florida, Orlando, Fl, USA
+    detail: University of Central Florida, Orlando, FL, USA
     i18n: ucf_phd
     href: https://www.ucf.edu/
   desc:
@@ -17,7 +17,7 @@
 
 
 - name:
-    detail: University of Central Florida, Orlando, Fl, USA
+    detail: University of Central Florida, Orlando, FL, USA
     i18n: ucf_master
     href: https://www.ucf.edu/
   desc:

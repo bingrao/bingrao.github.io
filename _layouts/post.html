@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+<hr>
+<hr>
 <div class="w3-container wrapper wrapper-content  animated fadeInRight art icle">
     <div class="row">
         <div class="col-lg-10 col-lg-offset-1">
@@ -9,18 +10,20 @@ layout: default
                 <div class="ibox-content">
                     <div class="pull-right">
                     	{% for category in page.categories %}
-                        	<button class="btn btn-white btn-xs" type="button">{{ category }}</button>
+                        	<button class="btn btn-white btn-xs" type="button">
+                            <a href="{{ category | downcase | prepend: "/blog/" | prepend: site.baseurl }}">
+                              {{ category }}
+                            </a>
+                          </button>
                       {% endfor %}
                     </div>
                     <div class="text-center article-title">
-                    <span class="text-muted"><i class="fa fa-clock-o">
-                      </i>{{ page.date | date: "%-d %b %Y" }}
-                    </span>
-                        <h1>
-                            {{ page.title }}
-                        </h1>
+                      <h1>{{ page.title }}</h1>
+                      <span class="text-muted"><i class="fa fa-clock-o">
+                        </i>{{ page.date | date: "%-d %b %Y" }}
+                      </span>
                     </div>
-                    	{{ content }}
+                    {{ content }}
                     <hr>
                     <div class="row">
                         <div class="col-md-6">
@@ -58,20 +61,18 @@ layout: default
 
                     <div style="margin-top:10px;margin-bottom:10px">
                       {%if page.previous%}
-                      <span class="next">
-                        上篇：
-                        <a href="{{page.previous.url}}">
-                          {{page.previous.title}}
-                        </a>
-                      </span>
+                        <span class="pre" style="float: left;">Prev:
+                          <a href="{{page.previous.url}}">
+                            {{page.previous.title}}
+                          </a>
+                        </span>
                       {%endif%}
                       {%if page.next%}
-                      <span class="prev">
-                        下篇：
-                        <a href="{{page.next.url}}">
-                          {{page.next.title}}
-                        </a>
-                      </span>
+                        <span class="next" style="float: right;">Next：
+                          <a href="{{page.next.url}}">
+                            {{page.next.title}}
+                          </a>
+                        </span>
                       {%endif%}
                     </div>
                     <br>
