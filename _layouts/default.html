@@ -7,11 +7,12 @@
 		<!-- body -->
 		<body id="page-top" class="landing-page">
 		</body>
-	{% when 'home' %}
+	{% when 'index' %}
 		<!-- header -->
 			{% include header/head_index.html %}
 		<!-- body -->
 		<body id="page-top" class="landing-page">
+			{% include navigation/nav_index.html %}
 			{{ content }}
 			{% include foot/foot_index.html %}
 		</body>
