@@ -1,18 +1,36 @@
 # links section data
-- last_name: Name 1
+- last_name: Google
   first_name:
-  desc: CEO
-  website: https://www.google.com
-  email: ceo@google.com
+  desc: Search the world's information.
+  website: https://www.google.com/
+  email:
 
-- last_name: Donate
-  first_name: Jalpc
-  desc: Support Jalpc
-  website: http://www.jarrekk.com/donate/
-  email: me@jarrekk.com
+- last_name: University of Central Florida
+  first_name:
+  desc: Search the world's information.
+  website: https://www.ucf.edu/
+  email:
 
-- last_name: LN
-  first_name: FN
-  desc: COO
-  website: https://github.com
-  email: coo@google.com
+- last_name: Github
+  first_name:
+  desc: A development platform inspired by the way you work.
+  website: https://github.com/
+  email:
+
+- last_name: MacroSAN
+  first_name:
+  desc: An innovation promoted high-techprovider of enterprise storage solution
+  website: http://www.macrosan.com/
+  email:
+
+- last_name: Jekyll
+  first_name:
+  desc: Transform your plain text into static websites and blogs.
+  website: https://jekyllrb.com/
+  email:
+
+- last_name: Wang
+  first_name: Liqiang
+  desc: An associate professor in the Department of Computer Science at the University of Central Florida.
+  website: http://www.cs.ucf.edu/~lwang/
+  email: lwang@cs.ucf.edu
