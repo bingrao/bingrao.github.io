@@ -2,7 +2,7 @@
 layout:	post
 title: Java Lambda简明教程
 categories: [Language]
-tags:	java
+tags:	[java]
 ---
 
 

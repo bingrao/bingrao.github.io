@@ -2,7 +2,7 @@
 layout: post
 title: Volley源码分析
 categories: [Language]
-tag: network,　异步, Volley, android
+tags: [network,　异步, Volley, android]
 ---
 
 说到Android的网络库，比较常用的就是Volley和okHttp了，最近重温了下Volley的源码，感觉应该写点什么．Volley 是 Google 推出的 Android 异步网络请求框架和图片加载框架，适合数据量小通信比较频繁的情形．

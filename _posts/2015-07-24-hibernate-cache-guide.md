@@ -2,7 +2,7 @@
 layout: post
 title: Hibernate缓存配置笔记
 categories: [Language]
-tags:   java, hibernate
+tags:   [java, hibernate]
 ---
 
 

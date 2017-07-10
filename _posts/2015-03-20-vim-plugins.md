@@ -2,9 +2,9 @@
 layout: post
 title: 一些强大的Vim插件
 keyword: Vim
-tags: Vim
+tags: [Vim,tools]
 date: 2015-03-20 09:20:26 +800
-categories: [Language]
+categories: [Language,System]
 ---
 
 *  目录

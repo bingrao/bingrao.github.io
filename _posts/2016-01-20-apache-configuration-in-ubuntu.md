@@ -2,7 +2,7 @@
 layout: post
 title: Ubuntu下Apache服务器的配置
 categories: [System]
-tag: [web, linux]
+tag: [web,linux]
 ---
 
 ##安装Apache

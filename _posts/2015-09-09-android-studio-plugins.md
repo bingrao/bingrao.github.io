@@ -2,7 +2,7 @@
 layout: post
 title: 提高效率的Android Studio插件
 categories: [System]
-tags: [android, studio]
+tags: [android,studio]
 ---
 
 这里记录那些可以显著提升Android开发效率的Studio插件，好的插件和快捷键可以提高效率，缩短开发周期。这里介绍的插件大部分都可以通过Studio的插件市场下载安装，安装方法如下：

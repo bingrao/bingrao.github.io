@@ -2,7 +2,7 @@
 layout: post
 title: Latex中英文环境设置
 categories: [Language]
-tag: Latex
+tags: [Latex]
 ---
 
 Latex默认是不支持中文的,后来有人开发了XeLatex来支持非英文字符,xetex是一种使用Unicode的TeX排版引擎,并默认其输入文件为UTF-8编码，也即,英文字符与非英文字符不再有区别，原生支持系统字体，这意味着我们无需再额外编译字体, 故可以在不进行额外配置的情况下直接使用操作系统中安装的字体。

@@ -2,7 +2,7 @@
 layout:	post
 title:	Android自定义视图教程
 categories: [System]
-tags:	android, view
+tags:	[android, view]
 ---
 
 Android的UI元素都是基于View(屏幕中单个元素)和ViewGroup(元素的集合),Android有许多自带的组件和布局，比如Button、TextView、RelativeLayout。在app开发过程中我们需要自定义视图组件来满足我们的需求。通过继承自View或者View的子类，覆写onDraw或者onTouchEvent等方法来覆盖视图的行为。

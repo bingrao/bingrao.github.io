@@ -4,7 +4,7 @@ title:      在Ubuntu下安装和编译LaTex
 keywords: LaTex, TexLive
 categories : [Language]
 description: LaTeX 是由美国计算机学家Lamport博士于1985年开发成功的,它是当今世界上最流行和使用最为广泛,以 TeX 为引擎的高质量格式化排版系统。
-tags : [编程, 学习]
+tags : [编程,学习]
 ---
 
 *  目录

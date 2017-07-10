@@ -2,7 +2,7 @@
 layout: post
 title: 彻底理解Gradle的任务
 categories: [Database]
-tags:   java, gradle
+tags: [java,gradle]
 ---
 
 在Gradle的build文件中，任务是构建活动最基本的单元，它是许多构建指令的集合，下面我将仔细介绍Gradle任务的细节。

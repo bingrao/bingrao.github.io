@@ -2,7 +2,7 @@
 layout: post
 title:  android实用小技巧
 description: 本文是一篇译文,讲述的是Android开发过程中遇到的一些实用的小技巧,或者一些实用的API,作者介绍的非常全面，推荐大家收藏起来，平常写Android程序也用的上。
-tags:   android, tips
+tags:   [android, tips]
 categories: [System]
 date:   2015-04-16 9:52:18 +800
 ---

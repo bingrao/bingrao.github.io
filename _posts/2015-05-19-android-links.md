@@ -2,7 +2,7 @@
 layout:	post
 title:	安卓开发者必备的42个链接
 categories: [Bigdata]
-tags:	android
+tags:	[android]
 ---
 
 {:toc}
