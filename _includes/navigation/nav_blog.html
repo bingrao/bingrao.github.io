@@ -25,9 +25,9 @@
                 {%  if page.title == 'Blog' %}
                   {% for section in site.data.landing %}
                     {% if section.id == 'blog' or section.id == 'publication' %}
-                      {% assign section_id= section.id | prepend: "/" | prepend: site.baseurl %}
+                      {% assign section_id = section.id | prepend: "/" | prepend: site.baseurl %}
                     {% else %}
-                      {% assign section_id= section.id | prepend: "#"%}
+                      {% assign section_id = section.id | prepend: "#" | prepend: site.baseurl %}
                     {% endif %}
                     <a class="page-scroll" href="{{ section_id }}">
                       <span data-i18n="{{ section.i18n }}">
