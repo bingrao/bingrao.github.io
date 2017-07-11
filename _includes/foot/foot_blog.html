@@ -12,7 +12,7 @@
             {% if site.data.author.author.github_username %}
               <li>
                 <a href="https://github.com/{{ site.data.author.author.github_username }}" target="blank">
-                  <i class="fa fa-github"></i>
+                  <i class="fa fa-github" title="Follow me on Github"></i>
                 </a>
               </li>
             {% endif %}
@@ -20,7 +20,7 @@
             {% if site.data.author.author.linkedin_id %}
               <li>
                 <a href="https://www.linkedin.com/in/{{ site.data.author.author.linkedin_id }}" target="blank">
-                  <i class="fa fa-linkedin"></i>
+                  <i class="fa fa-linkedin" title="Follow me on Linkedin"></i>
                 </a>
               </li>
             {% endif %}
@@ -28,7 +28,7 @@
             {% if site.data.author.author.facebook_username %}
               <li>
                 <a href="https://www.facebook.com/{{ site.data.author.author.facebook_username }}" target="blank">
-                  <i class="fa fa-facebook"></i>
+                  <i class="fa fa-facebook" title="Follow me on Facebook"></i>
                 </a>
               </li>
             {% endif %}
@@ -36,7 +36,7 @@
             {% if site.data.author.author.twitter_username %}
               <li>
                 <a href="https://twitter.com/{{ site.data.author.author.twitter_username }}" target="blank">
-                  <i class="fa fa-twitter"></i>
+                  <i class="fa fa-twitter" title="Follow me on Twitter"></i>
                 </a>
               </li>
             {% endif %}
@@ -44,21 +44,21 @@
             {% if site.data.author.author.email %}
               <li>
                 <a href="mailto:{{ site.data.author.author.email }}">
-                  <i class="fa fa-envelope-o"></i>
+                  <i class="fa fa-envelope-o" title="Email me"></i>
                 </a>
               </li>
             {% endif %}
 
             <li>
               <a href="{{ site.baseurl }}/feed.xml" target="blank">
-                <i class="fa fa-rss"></i>
+                <i class="fa fa-rss" title="Subscribe to my RSS"></i>
               </a>
             </li>
 
             {% if site.data.author.author.cv %}
               <li>
                 <a href="{{ site.data.author.author.cv | prepend: site.baseurl}}" target="blank">
-                  <i class="fa fa-file-pdf-o"></i>
+                  <i class="fa fa-file-pdf-o" title="My Resume"></i>
                 </a>
               </li>
             {% endif %}
