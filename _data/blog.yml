@@ -2,7 +2,7 @@
 - name: Blog
   href: /blog/
   background: /static/assets/img/blog/ad-next-card.png
-  desc: Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card
+  desc: This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.
 
 # edit following lines to custom your blog page,
 # make sure name is the same as href but capitalized
@@ -13,38 +13,31 @@
 - name: Language
   href: /blog/language/
   background: /static/assets/img/blog/india-nightlight-composite-card.png
-  desc: Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card
-
+  desc: Language Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card
 
 - name: System
   href: /blog/system/
   background: /static/assets/img/blog/nasa-card.jpg
-  desc: Buy 50 mobiles and get a gift card
+  desc: System Buy 50 mobiles and get a gift card
 
-#- name: Linux
-#  href: /blog/linux/
 
 - name: Bigdata
   href: /blog/bigdata/
   background: /static/assets/img/blog/openaq-card.jpg
-  desc: Buy 50 mobiles and get a gift card
+  desc: Bigdata Buy 50 mobiles and get a gift card
 
-#- name: HTML
-#  href: /blog/html/
 
 - name: Database
   href: /blog/database/
   background: /static/assets/img/blog/people-voting-card.jpg
-  desc: Buy 50 mobiles and get a gift card
+  desc: Database Buy 50 mobiles and get a gift card
 
-#- name: Mac
-#  href: /blog/mac/
 
 - name: Life
   href: /blog/life/
   background: /static/assets/img/blog/pursue-card.jpg
-  desc: Buy 50 mobiles and get a gift card
-  
+  desc: Life Buy 50 mobiles and get a gift card
+
 # Don't display donation page: change donation to off at file '_config.yml'
 #- name: Donate
 #  href: /blog/donate/
