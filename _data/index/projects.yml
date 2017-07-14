@@ -1,36 +1,54 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Jalpc
-  i18n: jalpc
-  gh_user: jarrekk
-  repo: Jalpc
-  img: /static/assets/img/landing/jekyll.png
-  desc: This project is my project.
-
-- name: LeetCode
-  i18n: leetcode
-  gh_user: kamyu104
-  repo: LeetCode
-  img: /static/assets/img/landing/leetcode.png
-  desc: This project is other's project.
-
-
-- name: LeetCode2
-  i18n: leetcode2
-  gh_user: kamyu104
-  repo: LeetCode
-  img: /static/assets/img/landing/leetcode.png
-  desc: This project is other's project.
-
-- name: FamilyCODE Wchat
-  i18n: familycode
-  repo: familycode
-  img: /static/assets/img/landing/familycode.png
-  desc: This is a shopping mall in wechat.
-
-- name: CyberSecutity
+- name: Cyber Secutity
   i18n: cybercode
-  repo: cybercode
-  img: /static/assets/img/landing/familycode.png
-  desc: This is a shopping mall in wechat.
+  gh_user: bingrao
+  repo: CyberSecuity
+  img: /static/assets/img/projects/cybersecuity.jpg
+  desc: A dynamic network activity model to characterize temporal trends in a large social-media network of interactive human agents
+
+
+- name: Sentiment Analysis
+  i18n: senti_spark
+  gh_user: bingrao
+  repo: SentimentAnalysis-Spark
+  img: /static/assets/img/projects/sentiment.jpg
+  desc: A machine learning model atop of Apache Spark to do some analysis on sentiment.
+
+- name: Scala AST
+  i18n: scala_ast
+  gh_user: bingrao
+  repo: Scala-AST
+  img: /static/assets/img/projects/ast.png
+  desc: Extracting abstract syntax tree (AST) from Scala source code via Scala compiler.
+
+
+- name: Spark Listener
+  i18n: SparkListener
+  gh_user: bingrao
+  repo: SparkListener
+  img: /static/assets/img/projects/leetcode.png
+  desc: This project introduces how to use spark Listerner to dig into internal spark.
+
+- name: A compiler for PL/0
+  i18n: pl0-compiler
+  gh_user: bingrao
+  repo: pl0-compiler
+  img: /static/assets/img/projects/compiler.png
+  desc: A basic compiler model for PL/0 language.
+
+- name: Static Analysis (JastAdd)
+  i18n: Scala-jastAdd
+  gh_user: bingrao
+  repo: Scala-jastAdd
+  img: /static/assets/img/projects/analysis.jpg
+  desc: This project build a analysis model atop of JastAdd to conduct static analysis on Scala language.
+
+
+- name: a plugin of eclipse
+  i18n: eclipse-archetype-plugin
+  gh_user: bingrao
+  repo: eclipse-archetype-plugin
+  img: /static/assets/img/projects/eclipse_plugin.jpg
+  desc: A archtype plugin of eclipse for Apache spark development.

@@ -7,15 +7,15 @@
     </div>
     <div class="row">
         {% for project in site.data.index.projects %}
-            {% assign loopindex = forloop.index | modulo: 2 %}
+            {% assign loopindex = forloop.index | modulo: 3 %}
             {% if forloop.last %}
                 {% if forloop.last == forloop.first %}
-                  <div class="col-sm-6 wow col-sm-offset-3 zoomIn">
+                  <div class="col-sm-4 wow col-sm-offset-2 zoomIn">
                 {% else %}
-                  <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft col-sm-offset-3 {% else %} fadeInRight {% endif %}">
+                  <div class="col-sm-4 wow {% if loopindex == 2 %} fadeInLeft col-sm-offset-2 {% else %} fadeInRight {% endif %}">
                 {% endif %}
             {% else %}
-                <div class="col-sm-6 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
+                <div class="col-sm-4 wow {% if loopindex == 1 %} fadeInLeft {% else %} fadeInRight {% endif %}">
             {% endif %}
             <div class="team-member">
                   <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
@@ -26,11 +26,11 @@
                       <span class="navy">{{ project.name }}</span>
                       {% endif %}
                   </h4>
-                  <p>
+                  <p><div style="height:45px">
                     <span data-i18n="projects.{{ project.i18n }}">
                       {{ project.desc }}
                     </span>
-                  </p>
+                  </div></p>
                   {% if project.repo %}
                     <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn">
                       <a target="_blank" style="width: 65px;" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;

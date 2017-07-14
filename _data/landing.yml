@@ -6,10 +6,10 @@
   tpl: about.html
   css:
 
-- id: career
+- id: footprint
   i18n: nav.career
-  name: Career
-  tpl: career.html
+  name: Footprint
+  tpl: footprint.html
   css: timeline
 
 - id: skills

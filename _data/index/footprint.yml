@@ -5,15 +5,15 @@
     i18n: ucf_phd
     href: https://www.ucf.edu/
   desc:
-    detail: I am a PhD candidate who designs and analyzes parallel computing system for Big Data and Data-intensive Computing System under the supervision of <a href="http://www.cs.ucf.edu/~lwang/">Dr. Liqiang Wang</a>.
+    detail: I am a PhD student who designs and analyzes parallel computing system for Big Data and Data-intensive Computing System under the supervision of <a href="http://www.cs.ucf.edu/~lwang/">Dr. Liqiang Wang</a>.
     i18n: ucf_phd_desc
   date:
     detail: July. 2016 to Present
     i18n: ucf_phd_date
   job:
-    detail: Phd Condidate
+    detail: Phd Student
     i18n: ucf_phd_job
-  icon: fa-plus-square
+  icon: fa-paw
 
 
 - name:
@@ -29,7 +29,7 @@
   job:
     detail: Master student
     i18n: company_b_job
-  icon: fa-plus-square
+  icon: fa-paw
 
 - name:
     detail: Elivebuy Co., Ltd., Shenzhen, GD, China
@@ -44,7 +44,7 @@
   job:
     detail: IT & Control Manager
     i18n: elivebuy_job
-  icon: fa-plus-square
+  icon: fa-paw
 
 
 
@@ -61,4 +61,4 @@
   job:
     detail: Driven Software Development Engineer
     i18n: macrosan_job
-  icon: fa-plus-square
+  icon: fa-paw
