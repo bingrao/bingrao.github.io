@@ -4,7 +4,7 @@
   booktitle: In 2016 Interservice/Industry Training, Simulation and Education Conference
   organization: I/ITSEC
   org_href: http://www.iitsec.org/
-  paper_link:
+  paper_link: /static/data/ITSEC2016.pdf
   slide_link:
   year: "2016"
 
@@ -13,6 +13,6 @@
   booktitle: In the the 24th IEEE International Conference on Web Services (ICWS)
   organization: ICWS
   org_href: http://icws.org/2017/
-  paper_link:
+  paper_link: /static/data/ICWS2017.pdf
   slide_link:
   year: "2017"

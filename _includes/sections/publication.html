@@ -81,10 +81,10 @@
                     <span><br></span>
                     </span>
                       {%  if public.paper_link %}
-                        [<a href="../papers/fang-thesis.pdf">PDF</a>]
+                        [<a href="{{ public.paper_link | prepend: site.baseurl}}">PDF</a>]
                       {% endif %}
                       {%  if public.slide_link %}
-                        [<a href="../slides/fang-defense.pdf">Slides for Defense</a>]
+                        [<a href="{{ public.slide_link | prepend: site.baseurl}}">Slides for Defense</a>]
                       {% endif %}
                     </span>
                 </td>
