@@ -8,36 +8,42 @@
 # make sure name is the same as href but capitalized
 # first letter(except HTML)
 
-#- name: Python
-#  href: /python/
-- name: Language
-  href: /blog/language/
-  background: /static/assets/img/blog/india-nightlight-composite-card.png
-  desc: Language Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card Buy 50 mobiles and get a gift card
+- name: Programing
+  href: /blog/programming/
+  background: /blog/programming/programming.jpg
+  desc:
 
-- name: System
-  href: /blog/system/
-  background: /static/assets/img/blog/nasa-card.jpg
-  desc: System Buy 50 mobiles and get a gift card
+- name: Linux
+  href: /blog/linux/
+  background: /blog/linux/linux.jpg
+  desc:
 
+- name: Spark
+  href: /blog/spark/
+  background: /blog/spark/spark.jpg
+  desc:
 
 - name: Bigdata
   href: /blog/bigdata/
-  background: /static/assets/img/blog/openaq-card.jpg
-  desc: Bigdata Buy 50 mobiles and get a gift card
-
+  background: /blog/bigdata/bigdata.jpg
+  desc:
 
 - name: Database
   href: /blog/database/
-  background: /static/assets/img/blog/people-voting-card.jpg
-  desc: Database Buy 50 mobiles and get a gift card
+  background: /blog/database/database.jpg
+  desc:
 
+- name: Tool
+  href: /blog/tool/
+  background: /blog/tool/tool.jpg
+  desc:
 
-- name: Life
-  href: /blog/life/
-  background: /static/assets/img/blog/pursue-card.jpg
-  desc: Life Buy 50 mobiles and get a gift card
+- name: System
+  href: /blog/system/
+  background: /blog/system/system.jpg
+  desc:
 
-# Don't display donation page: change donation to off at file '_config.yml'
-#- name: Donate
-#  href: /blog/donate/
+#- name: Life
+#  href: /blog/life/
+#  background: /static/assets/img/blog/pursue-card.jpg
+#  desc: Life Buy 50 mobiles and get a gift card
