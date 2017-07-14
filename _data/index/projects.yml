@@ -6,7 +6,7 @@
   gh_user: bingrao
   repo: CyberSecuity
   img: /static/assets/img/projects/cybersecuity.jpg
-  desc: A dynamic network activity model to characterize temporal trends in a large social-media network of interactive human agents
+  desc: A dynamic network activity model to characterize temporal trends of human agents activity
 
 
 - name: Sentiment Analysis

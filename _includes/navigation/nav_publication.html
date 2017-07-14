@@ -1,47 +1,5 @@
-<div class="search-tool"
-      style="position: fixed; top: 0px ; bottom: 0px; left: 0px; right:  0px; opacity: 0.95; background-color: #111111; z-index: 9999; display: none;">
-    <input type="text" class="form-control search-content" id="search-content" style="position: fixed; top: 60px" placeholder="Search Blog">
-
-    <div style="position: fixed; top: 16px; right: 16px; z-index: 9999;">
-        <img src="{{ "/search/img/cb-close.png" | prepend: site.baseurl }}" id="close-btn"/>
-    </div>
-</div>
-
-<div style="position: fixed; right: 16px; bottom: 20px; z-index: 9999;">
-    <img src="{{ "/search/img/cb-search.png" | prepend : site.baseurl }}"  id="search-btn"  title="Double click Ctrl"/>
-</div>
-
-<div class="navbar-wrapper">
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-
-          <div class="dropdown">
-            <button class="dropbtn">
-              <a style="color:#FDFEFE" href="{{ "/" | prepend: site.baseurl }}">
-                {{ site.title }}
-                <b class="caret"></b>
-              </a>
-            </button>
-            <div class="dropdown-content">
-              {% for section in site.data.landing %}
-                {% if section.id == 'blog' or section.id == 'publication' %}
-                  {% assign section_id= section.id | prepend: "/" | prepend: site.baseurl %}
-                {% else %}
-                  {% assign section_id= section.id | prepend: "/#" | prepend: site.baseurl %}
-                {% endif %}
-
-                <a href="{{ section_id }}">
-                  <span data-i18n="{{ section.i18n }}">
-                    {{ section.name }}
-                  </span>
-                </a>
-              {%  endfor %}
-            </div>
-          </div>
-
-        </div>
-    </nav>
-</div>
+{% include search.html %}
+{% include navigation/nav_common.html %}
 <div id="inSlider" class="carousel carousel-fade" data-ride="carousel">
     <div class="carousel-inner" role="listbox">
         <div class="item active">
@@ -54,7 +12,7 @@
             </div>
             <!-- Set background for slide in css -->
             <article style="height: 470px;width:100%;
-              background: url(/static/assets/img/landing/header_one.jpg) 50% 0 no-repeat;"
+              background: url(/static/assets/img/landing/slides/header_two.jpg) 50% 0 no-repeat;"
               class="col-lg-12" id="i18_blog">
               <div style="margin-top:250px"
                    class="container">
