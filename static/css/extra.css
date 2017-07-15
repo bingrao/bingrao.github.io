@@ -52,33 +52,3 @@ div#toc {
     border: 1px solid #aaa;
     display: inline-block !important;
 }
-
-
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-.wrapper_left {
-    display: flex;
-    align-items: stretch;
-    perspective: 1500px;
-}
-
-#sidebar_left {
-    min-width: 250px;
-    max-width: 250px;
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
-    transform-origin: bottom left;
-}
-
-#sidebar_left.active {
-    margin-left: -250px;
-    transform: rotateY(100deg);
-}
-
-#sidebar_left .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
-}

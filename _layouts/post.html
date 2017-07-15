@@ -1,116 +1,165 @@
 ---
 layout: default
 ---
-<hr>
-<hr>
-<div class="wrapper_left">
+<div class="wrapper">
   <!-- Sidebar Holder -->
-  <nav id="sidebar_left">
+  <nav id="sidebar">
     <div class="sidebar-header">
-      <h3>Content</h3>
+      <h3>Contents</h3>
     </div>
     <div class="toc"></div>
   </nav>
   <!-- Page Content Holder -->
-  <div class="w3-container wrapper wrapper-content  animated fadeInRight art icle">
-      <div class="row">
-          <div class="col-lg-10 col-lg-offset-1">
-              <div class="ibox">
-                  <div class="ibox-content">
-                      <div class="pull-right">
-                      	{% for category in page.categories %}
-                          	<button class="btn btn-white btn-xs" type="button">
-                              <a href="{{ category | downcase | prepend: "/blog/" | prepend: site.baseurl }}">
-                                {{ category }}
-                              </a>
-                            </button>
-                        {% endfor %}
-                      </div>
-                      <div class="text-center article-title">
-                        <h1>{{ page.title }}</h1>
-                        <span class="text-muted"><i class="fa fa-clock-o">
-                          </i>{{ page.date | date: "%-d %b %Y" }}
-                        </span>
-                      </div>
-                      {{ content }}
-                      <hr>
-                      <div class="row">
-                          <div class="col-md-6">
-                                  <h5 style="display: inline;">Tags:</h5>
-                                  {% for tag in page.tags %}
-                                      <button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
-                                  {% endfor %}
-                          </div>
-                          <div class="col-md-6">
-                              <div class="small text-right">
-                                  <h5>Stats:</h5>
-                                  <div>
-                                  {% if site.changyan %}
-                                      <i class="fa fa-comments-o"> </i> <span id = "url::{{post.url | prepend: page.url}}" class = "cy_cmt_count" ></span> comments
-                                  {% endif %}
-                                  {% if site.disqus %}
-                                      <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="{{ site.url }}{{ page.url }}">0</span> comments
-                                  {% endif %}
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
+  <div id="content">
+    <nav class="navbar navbar-default w3-teal">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+            <i class="glyphicon glyphicon-align-left"></i>
+            <span>Contents</span>
+          </button>
+        </div>
 
-                      <article class="unit-article layout-post">
-                          <div class="unit-inner unit-article-inner">
-                              <div class="content">
-                                  <div class="bd">
-                                      <div class="entry-content">
-                                          {{ post.content }}
-                                      </div><!-- entry-content -->
-                                  </div><!-- bd -->
-                              </div><!-- content -->
-                          </div><!-- unit-inner -->
-                      </article>
-
-                      <div style="margin-top:10px;margin-bottom:10px">
-                        {%if page.previous%}
-                          <span class="pre" style="float: left;">Prev:
-                            <a href="{{page.previous.url}}">
-                              {{page.previous.title}}
-                            </a>
-                          </span>
-                        {%endif%}
-                        {%if page.next%}
-                          <span class="next" style="float: right;">Next：
-                            <a href="{{page.next.url}}">
-                              {{page.next.title}}
-                            </a>
-                          </span>
-                        {%endif%}
-                      </div>
-                      <br>
-                      <div class="row">
-                          <div class="col-lg-12">
-                              <!-- donate -->
-                              {% if site.donation %}
-                                  {% include donate.html %}
-                              {% endif %}
-                              <br>
-                                <!-- share -->
-                                {% include share.html %}
-                              <br>
-                                <!-- comment -->
-                                {% include comments.html %}
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            {% for section in site.data.landing %}
+            <li>
+              {% if section.id == 'blog' or section.id == 'publication' %}
+                {% assign section_id= section.id | prepend: "/" | prepend: site.baseurl %}
+              {% else %}
+                {% assign section_id= section.id | prepend: "/#" | prepend: site.baseurl %}
+              {% endif %}
+              <a class="page-scroll" href="{{ section_id }}">
+                <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+              </a>
+            </li>
+            {% endfor %}
+            {% for language in site.data.index.language %}
+            <li>
+              <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
+                <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
       </div>
+    </nav>
+
+    <div class="w3-container wrapper wrapper-content  animated fadeInRight art icle">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="ibox">
+                    <div class="ibox-content">
+                        <div class="pull-right">
+                        	{% for category in page.categories %}
+                            	<button class="btn btn-white btn-xs" type="button">
+                                <a href="{{ category | downcase | prepend: "/blog/" | prepend: site.baseurl }}">
+                                  {{ category }}
+                                </a>
+                              </button>
+                          {% endfor %}
+                        </div>
+                        <div class="text-center article-title">
+                          <h1>{{ page.title }}</h1>
+                          <span class="text-muted"><i class="fa fa-clock-o">
+                            </i>{{ page.date | date: "%-d %b %Y" }}
+                          </span>
+                        </div>
+                        {{ content }}
+                        <hr>
+                        <div class="row">
+                            <div class="col-md-6">
+                                    <h5 style="display: inline;">Tags:</h5>
+                                    {% for tag in page.tags %}
+                                        <button class="btn btn-white btn-xs" type="button">{{ tag }}</button>
+                                    {% endfor %}
+                            </div>
+                            <div class="col-md-6">
+                                <div class="small text-right">
+                                    <h5>Stats:</h5>
+                                    <div>
+                                    {% if site.changyan %}
+                                        <i class="fa fa-comments-o"> </i> <span id = "url::{{post.url | prepend: page.url}}" class = "cy_cmt_count" ></span> comments
+                                    {% endif %}
+                                    {% if site.disqus %}
+                                        <i class="fa fa-comments-o"> </i> <span class='disqus-comment-count' data-disqus-url="{{ site.url }}{{ page.url }}">0</span> comments
+                                    {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <article class="unit-article layout-post">
+                            <div class="unit-inner unit-article-inner">
+                                <div class="content">
+                                    <div class="bd">
+                                        <div class="entry-content">
+                                            {{ post.content }}
+                                        </div><!-- entry-content -->
+                                    </div><!-- bd -->
+                                </div><!-- content -->
+                            </div><!-- unit-inner -->
+                        </article>
+
+                        <div style="margin-top:10px;margin-bottom:10px">
+                          {%if page.previous%}
+                            <span class="pre" style="float: left;">Prev:
+                              <a href="{{page.previous.url}}">
+                                {{page.previous.title}}
+                              </a>
+                            </span>
+                          {%endif%}
+                          {%if page.next%}
+                            <span class="next" style="float: right;">Next：
+                              <a href="{{page.next.url}}">
+                                {{page.next.title}}
+                              </a>
+                            </span>
+                          {%endif%}
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <!-- donate -->
+                                {% if site.donation %}
+                                    {% include donate.html %}
+                                {% endif %}
+                                <br>
+                                  <!-- share -->
+                                  {% include share.html %}
+                                <br>
+                                  <!-- comment -->
+                                  {% include comments.html %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
   </div>
 </div>
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- jQuery Nicescroll CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
 
 <script type="text/javascript">
   $(document).ready(function () {
-      $('#sidebarCollapse').on('click', function () {
-          $('#sidebar_left').toggleClass('active');
-          $(this).toggleClass('active');
-      });
+    $("#sidebar").niceScroll({
+      cursorcolor: '#53619d',
+      cursorwidth: 4,
+      cursorborder: 'none'
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar, #content').toggleClass('active');
+      $('.collapse.in').toggleClass('in');
+      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
   });
 </script>
