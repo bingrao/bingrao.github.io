@@ -5,14 +5,14 @@
 
   <meta content="{{ site.description }}" name="description">
   <meta name="keywords" content="{{ site.keywords }}">
-  <meta name="author" content="{{ site.author.name }}">
+  <meta name="author" content="{{ data.author.author.name }}">
   <title>{{ site.title }}</title>
   <!-- favicon -->
   <link rel="shortcut icon" href="{{ "/static/assets/img/favicon.ico" | prepend: site.baseurl }}">
 
   <!-- Main CSS -->
   <link href="{{ "/static/assets/app-20170606.min.css" | prepend: site.baseurl }}" rel="stylesheet">
-  <link href="{{ "/static/css/extra.css" | prepend: site.baseurl }}" rel="stylesheet">
+
   <!-- Main scripts -->
   <script src="{{ "/static/assets/app-index-20170606.min.js" | prepend: site.baseurl }}"></script>
 

@@ -10,7 +10,9 @@ categories: [Tool]
 
 sub_class: git
 
-abstract: An instruction to get checkout code from Github without any password and username via Git command.
+keywords: Git, authentication, password
+
+desc: An instruction to get checkout code from Github without any password and username via Git command.
 
 date: 2017-07-14
 

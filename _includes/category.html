@@ -76,7 +76,7 @@ classes and invalid classes like blank tag.
                       {{ post.title | strip_html | truncate:80 }}
                     </h3>
                     <p style="height:100px">
-                      {{ post.abstract | truncate:150 }}
+                      {{ post.desc | truncate:150 }}
                     </p>
                     <p><a class="btn btn-default" href="{{ post.url | prepend: site.baseurl }}" role="button">View details &raquo;</a></p>
                   </div> <!--/.col-xs-6.col-lg-4-->

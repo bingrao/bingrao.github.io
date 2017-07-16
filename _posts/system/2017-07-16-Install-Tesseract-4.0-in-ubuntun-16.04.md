@@ -8,9 +8,11 @@ categories: [System]
 
 sub_class: ocr
 
-tags: [Tesseract,OCR,Ubuntu]
+tags: [Tesseract, OCR, Ubuntu]
 
-abstract: A tutorial about how to install Tesseract ocr from source code in Ubuntu 16.04
+keywords: Tesseract 4.0, OCR, Ubuntu 16.04
+
+desc: A tutorial about how to install Tesseract 4.0 from source code in Ubuntu 16.04
 
 date: 2017-07-16
 

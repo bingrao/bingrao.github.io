@@ -10,7 +10,9 @@ sub_class:
 
 tags: []
 
-abstract:
+keywords:
+
+desc:
 
 date:
 
