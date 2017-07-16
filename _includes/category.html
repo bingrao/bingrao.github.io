@@ -88,7 +88,7 @@ classes and invalid classes like blank tag.
         </div><!--/.col-xs-12.col-sm-9-->
         <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
           <div class="list-group text-center">
-            <button id="tax_header" type="button" onclick="displayall()" class="list-group-item" style="text-align: center">
+            <button type="button" onclick="displayall()" class="list-group-item" style="text-align: center">
               <b>Taxonomy</b>
             </button>
             {%  for tax in taxs %}
@@ -133,16 +133,16 @@ classes and invalid classes like blank tag.
     var id_symbol = "#";
     var id_selector = id_symbol.concat(tax);
     $(document).ready(function(){
-      $("ul").children().hide();
-      $("ul").find(id_selector).show()
+      $("#pag-itemContainer").children().hide();
+      $("#page_id").hide();
+      $("#pag-itemContainer").find(id_selector).show()
     });
   }
 
   function displayall(){
     $(document).ready(function(){
-      $("#tax_header").click(function(){
-        $("li").show();
-      });
+      $("#pag-itemContainer").children().show();
+      $("#page_id").show();
     });
   }
 </script>
