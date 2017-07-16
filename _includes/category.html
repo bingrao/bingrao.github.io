@@ -17,36 +17,35 @@ $(function(){
 {% assign posts = site.categories[category] %}
 {% comment %}
 =======================
-The following part extracts all the tags from your posts
-and sort tags, so that you do not need to manually
-collect your tags to a place.
+The following part extracts all the sub-taxonomy from your posts
+and sort them, so that you do not need to manually
+collect your sub taxonomy of your post.
 =======================
 {% endcomment %}
-{% assign rawtags = "" %}
+{% assign rawtaxs = "" %}
 {% for post in posts %}
-	{% assign ttags = post.tags | join:'|' | append:'|' %}
-	{% assign rawtags = rawtags | append:ttags %}
+	{% assign ttaxs = post.sub_class | join:'|' | append:'|' | downcase %}
+	{% assign rawtaxs = rawtaxs | append:ttaxs %}
 {% endfor %}
-{% assign rawtags = rawtags | split:'|' | sort %}
+{% assign rawtaxs = rawtaxs | split:'|' | sort %}
 
 {% comment %}
 =======================
 The following part removes dulpicated
-tags and invalid tags like blank tag.
+classes and invalid classes like blank tag.
 =======================
 {% endcomment %}
-{% assign tags = "" %}
-{% for tag in rawtags %}
-	{% if tag != "" %}
-		{% if tags == "" %}
-			{% assign tags = tag | split:'|' %}
+{% assign taxs = "" %}
+{% for tax in rawtaxs %}
+	{% if tax != "" %}
+		{% if taxs == "" %}
+			{% assign taxs = tax | split:'|' %}
 		{% endif %}
-		{% unless tags contains tag %}
-			{% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+		{% unless taxs contains tax %}
+			{% assign taxs = taxs | join:'|' | append:'|' | append:tax | split:'|' %}
 		{% endunless %}
 	{% endif %}
 {% endfor %}
-
 
 <br>
 <div class="container-fluid">
@@ -71,7 +70,7 @@ tags and invalid tags like blank tag.
               {% assign counter = 0 %}
               {% for post in posts %}
                 {% assign counter = counter | plus: 1 %}
-                <li id="{{ post.tags | join: ',' }}" style="display:block">
+                <li id="{{ post.sub_class | downcase }}" style="display:block">
                   <div class="col-xs-6 col-lg-4">
                     <h3 style="height:45px">
                       {{ post.title | strip_html | truncate:80 }}
@@ -81,7 +80,7 @@ tags and invalid tags like blank tag.
                     </p>
                     <p><a class="btn btn-default" href="{{ post.url | prepend: site.baseurl }}" role="button">View details &raquo;</a></p>
                   </div> <!--/.col-xs-6.col-lg-4-->
-                </li>
+              </li>
               {% endfor %}
             </ul>
             {% include pagination.html %}
@@ -89,12 +88,15 @@ tags and invalid tags like blank tag.
         </div><!--/.col-xs-12.col-sm-9-->
         <div class="col-xs-6 col-sm-3 col-sm-pull-9 sidebar-offcanvas" id="sidebar">
           <div class="list-group text-center">
-            <button type="button" onclick="displayall()" class="list-group-item" style="text-align: center">
-              <b>Tags</b>
+            <button id="tax_header" type="button" onclick="displayall()" class="list-group-item" style="text-align: center">
+              <b>Taxonomy</b>
             </button>
-            {%  for tag in tags %}
-              <button type="button" onclick="filterContent('{{ tag }}')" class="list-group-item" style="text-align: center">
-                {{ tag }}
+            {%  for tax in taxs %}
+              <button type="button"
+                      onclick="filterContent('{{ tax }}')"
+                      class="list-group-item"
+                      style="text-align: center">
+                {{ tax }}
               </button>
             {%  endfor  %}
           </div>
@@ -104,6 +106,7 @@ tags and invalid tags like blank tag.
 </div>
 
 <script>
+  /*
   function filterContent(tag){
     var ul = document.getElementById("pag-itemContainer");
     for(var i=0; i<ul.children.length;i++){
@@ -116,7 +119,6 @@ tags and invalid tags like blank tag.
     }
     document.getElementById("page_id").style.display="none";
   }
-
   function displayall(){
     var ul = document.getElementById("pag-itemContainer");
     for(var i=0; i<ul.children.length;i++){
@@ -124,5 +126,23 @@ tags and invalid tags like blank tag.
       li.style.display="block";
     }
     document.getElementById("page_id").style.display="block";
+  }
+  */
+
+  function filterContent(tax){
+    var id_symbol = "#";
+    var id_selector = id_symbol.concat(tax);
+    $(document).ready(function(){
+      $("ul").children().hide();
+      $("ul").find(id_selector).show()
+    });
+  }
+
+  function displayall(){
+    $(document).ready(function(){
+      $("#tax_header").click(function(){
+        $("li").show();
+      });
+    });
   }
 </script>

@@ -2,16 +2,18 @@
 
 title: default jekyll permalink format of post
 
-keywords: [jekyll, permalink]
-
 layout: post
 
 categories: [Programming]
+
+sub_class:
 
 tags: []
 
 abstract:
 
 date:
+
+author:
 
 ---

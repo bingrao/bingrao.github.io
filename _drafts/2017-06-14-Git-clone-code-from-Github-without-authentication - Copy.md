@@ -1,6 +1,6 @@
 ---
 
-title: Git clone code from Github without authentication
+title: 6 Git clone code from Github without authentication
 
 tags: [Git, authentication, password]
 
@@ -8,11 +8,11 @@ layout: post
 
 categories: [Tool]
 
-sub_class: git
+sub_class: gIhub
 
 abstract: An instruction to get checkout code from Github without any password and username via Git command.
 
-date: 2017-07-14
+date: 2017-06-14
 
 author: Bing
 
