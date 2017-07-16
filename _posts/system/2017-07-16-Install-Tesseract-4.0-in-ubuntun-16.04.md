@@ -1,6 +1,6 @@
 ---
 
-title: Install Tesseract OCR
+title: Install Tesseract 4.0 in Ubuntu 16.04
 
 layout: post
 
