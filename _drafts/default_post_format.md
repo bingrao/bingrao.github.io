@@ -14,6 +14,6 @@ abstract:
 
 date:
 
-author:
+author: Bing
 
 ---
