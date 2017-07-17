@@ -25,7 +25,7 @@
         <ul class="nav navbar-nav navbar-right" id="i18_navbar">
           {% for section in site.data.landing %}
           <li>
-            {% if section.id == 'blog' or section.id == 'publication' %}
+            {% if page.title != 'index' and (section.id == 'blog' or section.id == 'publication') %}
               {% assign section_id= section.id | prepend: "/" | prepend: site.baseurl %}
             {% else %}
               {% assign section_id= section.id | prepend: "/#" | prepend: site.baseurl %}
