@@ -22,8 +22,8 @@ author: Bing
 
 This post expects you to be familiar with compiling software on your Ubuntu operation system.
 
-Configure compiling environment
-===============================
+**Configure compiling environment**
+===================================
 
 ```
 sudo apt-get install -y build-essential &&\
@@ -34,8 +34,8 @@ sudo apt-get install -y python-setuptools &&\
 sudo pip install -y cython
 ```
 
-Upgrade g++5
-============
+**Upgrade g++5**
+================
 
 ```
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test &&\
@@ -44,8 +44,8 @@ sudo apt-get upgrade &&\
 sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-5 60 --slave /usr/bin/g++ g++ /usr/bin/g++-5
 ```
 
-Install dependency pacakge.
-===========================
+**Install dependency package**
+==============================
 
 ```
 sudo apt-get install -y autoconf automake libtool &&\
@@ -60,8 +60,8 @@ sudo apt-get install -y libpango1.0-dev &&\
 sudo apt-get install -y libcairo2-dev
 ```
 
-Install Leptonica 1.74
-======================
+**Install Leptonica 1.74**
+==========================
 
 Install it from source code
 ---------------------------
@@ -78,8 +78,8 @@ Install it from source code
 	sudo make install
 	```
 
-Install it from Unofficial Ubuntu PPAs
---------------------------------------
+**Install it from Unofficial Ubuntu PPAs**
+------------------------------------------
 
 ```
 sudo add-apt-repository ppa:alex-p/tesseract-ocr &&\
@@ -88,8 +88,8 @@ sudo apt-get install -y libleptonica-dev &&\
 sudo ldconfig
 ```
 
-Install Tesseract 4.0
-=====================
+**Install Tesseract 4.0**
+=========================
 
 1.	Checkout code from [Github](https://github.com/tesseract-ocr/tesseract)
 

@@ -71,5 +71,4 @@ When you got **SSH** link, you can use the following command to checkout code.
 
 ```
 git clone git@github.com:bingrao/bingrao.github.io.git
-======================================================
 ```
