@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-{%	assign layout = page.layout %}
+{% assign layout = page.layout %}
 {% case layout %}
 	{% when 'default' %}
 		<!-- header -->
+		{% include header/head_default.html %}
 		<!-- body -->
 		<body id="page-top" class="landing-page">
+			{% include navigation/nav_default.html %}
+			{{ content }}
+			{% include foot/foot_default.html %}
 		</body>
 	{% when 'index' %}
 		<!-- header -->
-			{% include header/head_index.html %}
+		{% include header/head_index.html %}
 		<!-- body -->
 		<body id="page-top" class="landing-page">
 			{% include navigation/nav_index.html %}
