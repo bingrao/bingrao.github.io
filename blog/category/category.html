@@ -3,30 +3,102 @@ layout: default
 title: Categories
 permalink: /blog/category/
 ---
-<div></div>
-<div class="container">
-<div><h1>CATEGORIES</h1></div>
-<div class="tags-expo">
-  <div class="tags-expo-list">
-    {% for tag in site.categories %}
-    <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
-    {% endfor %}
-  </div>
-  <hr/>
-  <div class="tags-expo-section">
-    {% for tag in site.categories %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
-    <ul class="tags-expo-posts">
-      {% for post in tag[1] %}
-        <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+<div class="wrapper">
+  <!-- Sidebar Holder -->
+  <nav id="sidebar">
+    <div class="sidebar-header">
+      <h3>Category</h3>
+    </div>
+    <ul class="list-unstyled components">
+      {% for tag in site.categories %}
       <li>
-        {{ post.title }}
-      <small class="post-date">{{ post.date | date_to_string }}</small>
+        <a href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a>
       </li>
-      </a>
       {% endfor %}
     </ul>
-    {% endfor %}
+  </nav>
+  <!-- Page Content Holder -->
+  <div id="content">
+    <nav class="navbar navbar-default w3-teal">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+            <i class="glyphicon glyphicon-align-left"></i>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse"
+             id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            {% for section in site.data.landing %}
+            <li>
+              {% if section.id == 'blog' or section.id == 'publication' %}
+                {% assign section_id= section.id | prepend: "/" | prepend: site.baseurl %}
+              {% else %}
+                {% assign section_id= section.id | prepend: "/#" | prepend: site.baseurl %}
+              {% endif %}
+              <a class="page-scroll" href="{{ section_id }}">
+                <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+              </a>
+            </li>
+            {% endfor %}
+            {% for language in site.data.index.language %}
+            <li>
+              <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">
+                <img src="{{ language.flag | prepend: site.baseurl }}" height="16" width="16">
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+    <div><h1>CATEGORIES</h1></div>
+    <div class="tags-expo">
+      <div class="tags-expo-list">
+        {% for tag in site.categories %}
+        <a href="#{{ tag[0] | slugify }}" class="post-tag">{{ tag[0] }}</a>
+        {% endfor %}
+      </div>
+      <hr/>
+      <div class="tags-expo-section">
+        {% for tag in site.categories %}
+        <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+        <ul class="tags-expo-posts">
+          {% for post in tag[1] %}
+            <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+          <li>
+            {{ post.title }}
+          <small class="post-date">{{ post.date | date_to_string }}</small>
+          </li>
+          </a>
+          {% endfor %}
+        </ul>
+        {% endfor %}
+      </div>
+    </div>
+    </div>
+
   </div>
 </div>
-</div>
+
+<!-- jQuery Nicescroll CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.6.8-fix/jquery.nicescroll.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("#sidebar").niceScroll({
+      cursorcolor: '#53619d',
+      cursorwidth: 4,
+      cursorborder: 'none'
+    });
+
+    $('#sidebarCollapse').on('click', function () {
+      $('#sidebar, #content').toggleClass('active');
+      $('.collapse.in').toggleClass('in');
+      $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+    });
+  });
+</script>

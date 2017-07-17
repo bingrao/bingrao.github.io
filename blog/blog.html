@@ -6,6 +6,17 @@ permalink: /blog/
 <!-- list the blog section -->
 <br>
 <div class="container">
+  <div class="text-center article-title">
+    <h1>The list of blogs taxonomy</h1>
+    <span>
+      <a href="{{ "/blog/category" | prepend: site.baseurl }}">Categories</a>
+    </span>
+    <span>|</span>
+    <span>
+      <a href="{{ "/blog/tag" | prepend: site.baseurl }}">Tags</a>
+    </span>
+  </div>
+
   <div class="row">
     {% for tag in site.data.blog %}
       {% if tag.name != 'Blog' %}
