@@ -58,7 +58,7 @@ permalink: /publication/
         {%  for public in site.data.publication %}
             {%  if public.year == year  %}
               <tr>
-                <td>
+                <td style="width:45px">
                   <p>
                     <span>
                       <a href="{{ public.org_href }}">{{ public.organization }}</a><o:p></o:p>
@@ -69,12 +69,10 @@ permalink: /publication/
                 <td>
                   <span>
                     <span><strong>
-                      <b>{{ public.title }}</b>
+                      <h3><b>{{ public.title }}</b></h3>
                     </strong></span>
-                    <span><br></span>
-                    <span>{{ public.author }}</span>
-                    <span><br></span>
-                    <span>{{ public.booktitle }}</span>
+                    <span><h4>{{ public.author }}</h4></span>
+                    <span><i>{{ public.booktitle }}</i></span>
                     <span><br></span>
                     </span>
                       {%  if public.paper_link %}
@@ -93,3 +91,4 @@ permalink: /publication/
     {% endfor %}
   </div>
 </div>
+<p></p>

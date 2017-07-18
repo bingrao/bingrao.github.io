@@ -2,7 +2,7 @@
 - name: Blog
   href: /blog/
   background: /static/assets/img/blog/ad-next-card.png
-  desc: This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.
+  desc:
 
 # edit following lines to custom your blog page,
 # make sure name is the same as href but capitalized
@@ -11,37 +11,37 @@
 - name: Programing
   href: /blog/programming/
   background: /blog/programming/programming.jpg
-  desc:
+  desc: Learning programming is fun and easy, but writing a good program can prove to be a daunting task.
 
 - name: Linux
   href: /blog/linux/
   background: /blog/linux/linux.jpg
-  desc:
+  desc: An best-known and most-used open source operating system appeals to a huge number of developers.
 
-- name: Spark
-  href: /blog/spark/
-  background: /blog/spark/spark.jpg
-  desc:
+#- name: Spark
+#  href: /blog/spark/
+#  background: /blog/spark/spark.jpg
+#  desc: A fast and general engine for large-scale data processing.
 
 - name: Bigdata
   href: /blog/bigdata/
   background: /blog/bigdata/bigdata.jpg
-  desc:
+  desc: Involving in some issues about parallel computing in bigdata area.
 
 - name: Database
   href: /blog/database/
   background: /blog/database/database.jpg
-  desc:
+  desc: Introducing some special techniques in the database domain.
 
 - name: Tool
   href: /blog/tool/
   background: /blog/tool/tool.jpg
-  desc:
+  desc: A summary of some useful tool kits that I encountered.
 
 - name: System
   href: /blog/system/
   background: /blog/system/system.jpg
-  desc:
+  desc: Introducing some interesting system.
 
 #- name: Life
 #  href: /blog/life/
