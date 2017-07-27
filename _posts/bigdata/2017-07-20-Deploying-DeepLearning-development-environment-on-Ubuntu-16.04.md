@@ -247,3 +247,4 @@ Reference
 4.	[Installation theano](http://deeplearning.net/software/theano/install_ubuntu.html)
 5.	[NVIDIA CUDA Installation Guide for Linux](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#axzz4nOZO7Ie5)
 6.	[Installation gpuarray](http://deeplearning.net/software/libgpuarray/installation.html#step-by-step-install)
+7.	[TensorFlow — Getting started, GPU installation on EC2](https://medium.com/@giltamari/tensorflow-getting-started-gpu-installation-on-ec2-9b9915d95d6f)
