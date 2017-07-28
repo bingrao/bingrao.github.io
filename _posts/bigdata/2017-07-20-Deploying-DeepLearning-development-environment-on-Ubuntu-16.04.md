@@ -91,7 +91,7 @@ Install CUDA 8.0 for GTX 1080
 
 -	Download the NVIDIA CUDA Toolkit
 
-	The NVIDIA CUDA Toolkit is available at [NVIDIA Download](http://developer.nvidia.com/cuda-downloads).
+	The NVIDIA CUDA Toolkit is available at [<span style="color:red">**NVIDIA Download**</span>](http://developer.nvidia.com/cuda-downloads)\.
 
 	![Download CUDA8.0](/static/data/blog/system/download_cuda8.0.png)
 
@@ -154,7 +154,7 @@ Install CUDA 8.0 for GTX 1080
 Install cuDNN v5.1
 ==================
 
-Once the CUDA Toolkit is installed, download [cuDNN v5.1 Library](https://developer.nvidia.com/rdp/cudnn-download#a-collapseTwo) for Linux and install by following the official documentation.
+Once the CUDA Toolkit is installed, download [<span style="color:red">**cuDNN v5.1 Library**</span>](https://developer.nvidia.com/rdp/cudnn-download#a-collapseTwo) for Linux and install by following the official documentation.
 
 Once downloaded, navigate to the directory containing cuDNN then execute following command:
 
@@ -197,7 +197,7 @@ Install TensorFlow v1.2
 Install theano
 ==============
 
--	Please refer to Theano [install Documents](http://deeplearning.net/software/theano/install_ubuntu.html) to satisfy the requirements.
+-	Please refer to Theano [<span style="color:red">**install Documents**</span>](http://deeplearning.net/software/theano/install_ubuntu.html) to satisfy the requirements.
 
 -	Install the latest stable version of Theano with:
 
@@ -208,7 +208,7 @@ Install theano
 Install gpuarray
 ================
 
--	Please double check Build ad Run Requirements based on [Installation Document](http://deeplearning.net/software/libgpuarray/installation.html#step-by-step-install)
+-	Please double check Build ad Run Requirements based on [<span style="color:red">**Installation Document**</span>](http://deeplearning.net/software/libgpuarray/installation.html#step-by-step-install)
 
 -	Download source code.
 
@@ -241,10 +241,10 @@ Install gpuarray
 Reference
 =========
 
-1.	[ TensorFlow Installation from NVIDA Document](http://www.nvidia.com/object/gpu-accelerated-applications-tensorflow-installation.html)
-2.	[Installing TensorFlow on Ubuntu](https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_python_package)
-3.	[Installation gpuarray](http://deeplearning.net/software/libgpuarray/installation.html#step-by-step-install)
-4.	[Installation theano](http://deeplearning.net/software/theano/install_ubuntu.html)
-5.	[NVIDIA CUDA Installation Guide for Linux](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#axzz4nOZO7Ie5)
-6.	[Installation gpuarray](http://deeplearning.net/software/libgpuarray/installation.html#step-by-step-install)
-7.	[TensorFlow — Getting started, GPU installation on EC2](https://medium.com/@giltamari/tensorflow-getting-started-gpu-installation-on-ec2-9b9915d95d6f)
+1.	[<span style="color:blue">TensorFlow Installation from NVIDA Document</span>](http://www.nvidia.com/object/gpu-accelerated-applications-tensorflow-installation.html)
+2.	[<span style="color:blue">Installing TensorFlow on Ubuntu</span>](https://www.tensorflow.org/install/install_linux#the_url_of_the_tensorflow_python_package)
+3.	[<span style="color:blue">Installation gpuarray</span>](http://deeplearning.net/software/libgpuarray/installation.html#step-by-step-install)
+4.	[<span style="color:blue">Installation theano</span>](http://deeplearning.net/software/theano/install_ubuntu.html)
+5.	[<span style="color:blue">NVIDIA CUDA Installation Guide for Linux</span>](http://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html#axzz4nOZO7Ie5)
+6.	[<span style="color:blue">Installation gpuarray</span>](http://deeplearning.net/software/libgpuarray/installation.html#step-by-step-install)
+7.	[<span style="color:blue">TensorFlow — Getting started, GPU installation on EC2</span>](https://medium.com/@giltamari/tensorflow-getting-started-gpu-installation-on-ec2-9b9915d95d6f)
