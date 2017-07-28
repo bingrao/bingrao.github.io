@@ -46,27 +46,27 @@ Pre-deploy
 -	Install essential build tools for system
 
 	```
-	sudo apt-get install -y build-essential &
-	sudo apt-get install -y git &
-	sudo apt-get install -y python-pip &
-	sudo apt-get install -y python-matplotlib &
-	sudo apt-get install -y python-dev &
-	sudo apt-get install -y python-pydot &
-	sudo apt-get install -y python-numpy &
-	sudo apt-get install -y python-sklearn &
-	sudo apt-get install -y python-pandas &
-	sudo apt-get install -y libfreetype6-dev &
-	sudo apt-get install -y libxft-dev &
-	sudo apt-get install -y libncurses-dev &
-	sudo apt-get install -y libopenblas-dev &
-	sudo apt-get install -y gfortran &
-	sudo apt-get install -y libblas-dev &
-	sudo apt-get install -y liblapack-dev &
-	sudo apt-get install -y libatlas-base-dev &
-	sudo apt-get install -y unzip zip &
-	sudo apt-get install -y swig python-pandas &
-	sudo apt-get install -y wget &
-	sudo apt-get install -y pkg-config &
+	sudo apt-get install -y build-essential &&\
+	sudo apt-get install -y git &&\
+	sudo apt-get install -y python-pip &&\
+	sudo apt-get install -y python-matplotlib &&\
+	sudo apt-get install -y python-dev &&\
+	sudo apt-get install -y python-pydot &&\
+	sudo apt-get install -y python-numpy &&\
+	sudo apt-get install -y python-sklearn &&\
+	sudo apt-get install -y python-pandas &&\
+	sudo apt-get install -y libfreetype6-dev &&\
+	sudo apt-get install -y libxft-dev &&\
+	sudo apt-get install -y libncurses-dev &&\
+	sudo apt-get install -y libopenblas-dev &&\
+	sudo apt-get install -y gfortran &&\
+	sudo apt-get install -y libblas-dev &&\
+	sudo apt-get install -y liblapack-dev &&\
+	sudo apt-get install -y libatlas-base-dev &&\
+	sudo apt-get install -y unzip zip &&\
+	sudo apt-get install -y swig python-pandas &&\
+	sudo apt-get install -y wget &&\
+	sudo apt-get install -y pkg-config &&\
 	sudo apt-get install -y zlib1g-dev
 	```
 
