@@ -6,21 +6,3 @@
   active: active
   src: static/assets/img/landing/slides/header_one.jpg
   css: header-back
-
-- id: slide_2
-  type: image
-  active: inactive
-  src: static/assets/img/landing/slides/header_two.jpg
-  css: header-back
-
-- id: slide_3
-  type: image
-  active: inactive
-  src: static/assets/img/landing/slides/header_three.jpg
-  css: header-back
-
-- id: slide_4
-  type: image
-  active: inactive
-  src: static/assets/img/landing/slides/header_four.jpg
-  css: header-back
