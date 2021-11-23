@@ -1,3 +1,5 @@
+# Welcome to Jekyll!
+
 # Website settings
 title: Bing
 description: Bing's blog, which is based on github pages and jekyll tools
@@ -14,8 +16,7 @@ disqus:  # if you wanna comment feature, go to https://disqus.com/ to get your c
 
 # analytics
 ## google analytics
-# if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
-ga:
+ga:  # if you wanna this feature, go to https://www.google.com/analytics/ to get your configuration; if not, comment following line.
   id: UA-102762563-1
 
 ## google optimize
@@ -24,11 +25,7 @@ go:
 
 
 ## growingIO
-# if you wanna this feature, go to
-# https://www.growingio.com/ to
-# get your configuration; if not,
-# comment following line.
-gio:
+gio:  # if you wanna this feature, go to https://www.growingio.com/ to get your configuration; if not, comment following line.
   # id:
 
 
