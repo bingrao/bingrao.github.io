@@ -24,14 +24,14 @@
   tpl: projects.html
   css: project
 
-- id: publication
-  i18n: nav.publication
-  name: Publication
-  tpl: publication.html
-  css: navy-section
-
 - id: links
   i18n: nav.link
   name: Links
   tpl: links.html
   css: contact
+  
+- id: publication
+  i18n: nav.publication
+  name: Publication
+  tpl: publication.html
+  css: navy-section
