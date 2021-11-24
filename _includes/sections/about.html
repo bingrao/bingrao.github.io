@@ -3,14 +3,15 @@
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
             <h1><span data-i18n="about_me.about_me">About Me</span></h1>
+            <!-- <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p> -->
         </div>
     </div>
     <div class="row">
         <!-- first two icons -->
-        {% for icon in site.data.author.author.skill_icon1 %}
+        {% for icon in site.author.skill_icon1 %}
         <div class="col-xs-2 wow fadeInLeft">
             <div class="team-member">
-                <div class="vote-icon">
+                <div class="vote-icon" style="text-align: center">
                     <i class="fa {{ icon.name }}"></i>
                 </div>
             </div>
@@ -19,58 +20,74 @@
         <!-- avatar -->
         <div class="col-xs-4">
             <div class="team-member wow zoomIn">
-                <img src="{{ site.data.author.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
-                <h4><span class="navy">{{ site.data.author.author.first_name }}</span> {{ site.data.author.author.last_name }}</h4>
+                <img src="{{ site.author.avatar | prepend: site.baseurl }}" height="110" width="110" class="img-responsive img-circle" alt="">
+                <h4><span class="navy">{{ site.author.first_name }}</span> {{ site.author.last_name }}</h4>
                 <ul class="list-inline social-icon">
-                    {% if site.data.author.author.github_username %}
-                      <li>
-                        <a href="https://github.com/{{ site.data.author.author.github_username }}" target="blank">
-                          <i class="fa fa-github" title="Follow me on Github"></i>
-                        </a>
-                      </li>
+                    {% if site.author.github_username %}
+                        <li>
+                            <a href="https://github.com/{{ site.author.github_username }}" target="blank">
+                                <i class="fa fa-github" title="Follow me on Github"></i>
+                            </a>
+                        </li>
                     {% endif %}
 
-                    {% if site.data.author.author.linkedin_id %}
+                    {% if site.author.linkedin_id %}
                       <li>
-                        <a href="https://www.linkedin.com/in/{{ site.data.author.author.linkedin_id }}" target="blank">
+                        <a href="https://www.linkedin.com/in/{{ site.author.linkedin_id }}" target="blank">
                           <i class="fa fa-linkedin" title="Follow me on Linkedin"></i>
                         </a>
                       </li>
                     {% endif %}
 
-                    {% if site.data.author.author.facebook_username %}
+                    {% if site.author.facebook_username %}
                       <li>
-                        <a href="https://www.facebook.com/{{ site.data.author.author.facebook_username }}" target="blank">
+                        <a href="https://www.facebook.com/{{ site.author.facebook_username }}" target="blank">
                           <i class="fa fa-facebook" title="Follow me on Facebook"></i>
                         </a>
                       </li>
                     {% endif %}
 
-                    {% if site.data.author.author.twitter_username %}
+                    {% if site.author.twitter_username %}
                       <li>
-                        <a href="https://twitter.com/{{ site.data.author.author.twitter_username }}" target="blank">
+                        <a href="https://twitter.com/{{ site.author.twitter_username }}" target="blank">
                           <i class="fa fa-twitter" title="Follow me on Twitter"></i>
                         </a>
                       </li>
                     {% endif %}
 
-                    {% if site.data.author.author.email %}
+                    {% if site.author.email %}
                       <li>
-                        <a href="mailto:{{ site.data.author.author.email }}">
-                          <i class="fa fa-envelope-o" title="Email me"></i>
+                        <a href="mailto:{{ site.author.email }}">
+                          <i class="fa fa-envelope-o" aria-hidden="true" title="Email me"></i>
                         </a>
                       </li>
                     {% endif %}
 
-                    <li>
-                      <a href="{{ site.baseurl }}/feed.xml" target="blank">
-                        <i class="fa fa-rss" title="Subscribe to my RSS"></i>
-                      </a>
-                    </li>
+<!--                    <li>-->
+<!--                      <a href="{{ site.baseurl }}/feed.xml" target="blank">-->
+<!--                        <i class="fa fa-rss" title="Subscribe to my RSS"></i>-->
+<!--                      </a>-->
+<!--                    </li>-->
 
-                    {% if site.data.author.author.cv %}
+                    {% if site.author.googlescholar %}
                       <li>
-                        <a href="{{ site.data.author.author.cv | prepend: site.baseurl}}" target="blank">
+                        <a href="https://scholar.google.com/citations?user={{ site.author.twitter_username }}" target="blank">
+                          <i class="fa fa-google" aria-hidden="true" title="Follow me on Google Scholar"></i>
+                        </a>
+                      </li>
+                    {% endif %}
+
+<!--                    {% if site.author.researchgate %}-->
+<!--                      <li>-->
+<!--                        <a href="https://www.researchgate.net/{{ site.author.researchgate }}" target="blank">-->
+<!--                          <i class="fa fa-researchgate"  aria-hidden="true" title="Follow me on ResearchGate"></i>-->
+<!--                        </a>-->
+<!--                      </li>-->
+<!--                    {% endif %}-->
+
+                    {% if site.author.cv %}
+                      <li>
+                        <a href="{{ site.author.cv | prepend: site.baseurl}}" target="blank">
                           <i class="fa fa-file-pdf-o" title="My Resume"></i>
                         </a>
                       </li>
@@ -79,10 +96,10 @@
             </div>
         </div>
         <!-- second two icons -->
-        {% for icon in site.data.author.author.skill_icon2 %}
+        {% for icon in site.author.skill_icon2 %}
         <div class="col-xs-2 wow fadeInRight">
             <div class="team-member">
-                <div class="vote-icon">
+                <div class="vote-icon" style="text-align: center">
                     <i class="fa {{ icon.name }}"></i>
                 </div>
             </div>
@@ -90,8 +107,14 @@
         {% endfor %}
     </div>
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 m-t-lg m-b-lg wow zoomIn">
-            <p><span data-i18n="about_me.des">{{ site.data.author.author.desc }}</span></p>
+        <div class="col-lg-8 col-lg-offset-2 text-center m-t-lg m-b-lg wow zoomIn">
+            <p><span data-i18n="about_me.des">{{ site.author.desc }}</span></p>
         </div>
     </div>
+<!--    <div class="row">-->
+<!--        <div class="col-lg-12 text-center">-->
+<!--            <div class="navy-line"></div>-->
+<!--            <h1><span data-i18n="career.my_career">My Educations</span></h1>-->
+<!--        </div>-->
+<!--    </div>-->
 </div>

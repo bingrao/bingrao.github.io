@@ -7,7 +7,7 @@
   =======================
   {% endcomment %}
   {% assign rawtags = "" %}
-  {% for post in site.data.publication %}
+  {% for post in site.data.index.publication %}
   	{% assign ttags = post.year | join:'|' | append:'|' %}
   	{% assign rawtags = rawtags | append:ttags %}
   {% endfor %}
@@ -58,7 +58,7 @@
         {{ year }}:<o:p></o:p>
       </span></b></em></p>
       <table style="color:Gray" border=0 cellpadding=0>
-        {%  for public in site.data.publication %}
+        {%  for public in site.data.index.publication %}
             {%  if public.year == year  %}
               <tr>
                 <td style="width:45px">
@@ -82,7 +82,10 @@
                         [<a href="{{ public.paper_link | prepend: site.baseurl}}">PDF</a>]
                       {% endif %}
                       {%  if public.slide_link %}
-                        [<a href="{{ public.slide_link | prepend: site.baseurl}}">Slides for Defense</a>]
+                        [<a href="{{ public.slide_link | prepend: site.baseurl}}">Slides</a>]
+                      {% endif %}
+                      {%  if public.pager_submit %}
+                        [<a>Under Review</a>]
                       {% endif %}
                     </span>
                 </td>

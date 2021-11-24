@@ -1,0 +1,30 @@
+# inSlider section
+# custom following lines to add your slide content in the inSlider section.
+
+- id: slide_1
+  type: image
+  active: active
+  src: landing/header_one.jpg
+  css: header-back
+  title: first banner image
+
+- id: slide_2
+  type: image
+  active: inactive
+  src: landing/header_two.jpg
+  css: header-back
+  title: second banner image
+
+- id: slide_3
+  type: image
+  active: inactive
+  src: landing/header_three.jpg
+  css: header-back
+  title: third banner image
+
+- id: slide_4
+  type: image
+  active: inactive
+  src: landing/header_four.jpg
+  css: header-back
+  title: fourth banner image

@@ -1,0 +1,86 @@
+# List publication.
+- title: "CTIN: Robust Contextual Transformer Network for Inertial Navigation"
+  author: <b>Bingbing Rao</b>, Ehsan Kazemi, Yifan Ding, Devu M Shila, Frank M. Tucker Liqiang Wang
+  booktitle: Proceedings of the AAAI Conference on Artificial Intelligence
+  organization: AAAI
+  org_href:
+  paper_link:
+  slide_link:
+  pager_submit: "Under Review"
+  year: "2021"
+
+- title: "Bug2Fix: An Enhanced Transformer Model with Context-Aware Alignment for Automated Program Repair"
+  author: <b>Bingbing Rao</b>, Jie Yao, Weiwei Xing, Liqiang Wang
+  booktitle: IEEE International Conference on Software Testing, Verification and Validation (ICST)
+  organization: IEEE
+  org_href:
+  paper_link:
+  slide_link:
+  pager_submit: "Under Review"
+  year: "2021"
+
+- title: "SODA: A Semantics-Aware Optimization Framework for Data-Intensive Applications Using Hybrid Program Analysis"
+  author: <b>Bingbing Rao</b>, Zixia Liu, Hong Zhang, Siyang Lu, Liqiang Wang
+  booktitle: IEEE 14th International Conference on Cloud Computing (CLOUD)
+  organization: IEEE
+  org_href:
+  paper_link: https://arxiv.org/abs/2107.11536
+  slide_link:
+  year: "2021"
+
+- title: Interaction models for detecting nodal activities in temporal social media networks
+  author: Winyan Chung, <b>Bingbing Rao</b>, Liqiang Wang
+  booktitle: ACM Transactions on Management Information Systems (TMIS)
+  organization: ACM
+  org_href:
+  paper_link: /static/data/TMIS2019.pdf
+  slide_link:
+  year: "2019"
+
+
+- title: "LADRA: Log-based abnormal task detection and root-cause analysis in big data processing with Spark"
+  author: Siyang Lu, Xiang Wei, <b>Bingbing Rao</b>, Byungchul Tak, Long Wang, Liqiang Wang
+  booktitle: Future Generation Computer Systems
+  organization: Elsevier
+  org_href:
+  paper_link: /static/data/FGCS-2019.pdf
+  slide_link:
+  year: "2019"
+
+
+- title: A Reinforcement Learning Based Resource Management Approach for Time-critical Workloads in Distributed Computing Environment
+  author: Zixia Liu, Hong Zhang, <b>Bingbing Rao</b>, Liqiang Wang
+  booktitle: IEEE International Conference on Big Data (Big Data)
+  organization: IEEE
+  org_href: https://cci.drexel.edu/bigdata/bigdata2018/
+  paper_link: /static/data/2018-BigData.pdf
+  slide_link:
+  year: "2018"
+
+- title: Log-based Abnormal Task Detection and Root Cause Analysis for Spark
+  author: Siyang Lu,<b>Bingbing Rao</b>, Xiang Wei, Byungchul Tak, Long Wang, Liqiang Wang
+  booktitle: In the the 24th IEEE International Conference on Web Services (ICWS)
+  organization: IEEE
+  org_href: http://icws.org/2017/
+  paper_link: /static/data/ICWS2017.pdf
+  slide_link:
+  year: "2017"
+
+
+- title: A Survey of Semantics-Aware Performance Optimization for Data-Intensive Computing
+  author: <b>Bingbing Rao</b>, Liqiang Wang
+  booktitle: IEEE 15th Intl Conf on Pervasive Intelligence and Computing (PiCom)
+  organization: IEEE
+  org_href: http://cyber-science.org/2019/picom/
+  paper_link: https://arxiv.org/abs/2107.11540
+  slide_link:
+  year: "2017"
+
+- title: Dynamic Trend Detection in U.S. Border Security Social-Media Networks
+  author: Wingyan Chung, <b>Bingbing Rao</b>, Liqiang Wang
+  booktitle: In 2016 Interservice/Industry Training, Simulation and Education Conference
+  organization: I/ITSEC
+  org_href: http://www.iitsec.org/
+  paper_link: /static/data/ITSEC2016.pdf
+  slide_link:
+  year: "2016"

@@ -10,27 +10,27 @@
   desc: Search the world's information.
   website: https://www.ucf.edu/
   email:
-
-- last_name: Github
-  first_name:
-  desc: A development platform inspired by the way you work.
-  website: https://github.com/
-  email:
-
-- last_name: MacroSAN
-  first_name:
-  desc: An innovation promoted high-techprovider of enterprise storage solution
-  website: http://www.macrosan.com/
-  email:
-
-- last_name: Jekyll
-  first_name:
-  desc: Transform your plain text into static websites and blogs.
-  website: https://jekyllrb.com/
-  email:
-
-- last_name: Wang
-  first_name: Liqiang
-  desc: An associate professor in the Department of Computer Science at the University of Central Florida.
-  website: http://www.cs.ucf.edu/~lwang/
-  email: lwang@cs.ucf.edu
+#
+#- last_name: Github
+#  first_name:
+#  desc: A development platform inspired by the way you work.
+#  website: https://github.com/
+#  email:
+#
+#- last_name: MacroSAN
+#  first_name:
+#  desc: An innovation promoted high-techprovider of enterprise storage solution
+#  website: http://www.macrosan.com/
+#  email:
+#
+#- last_name: Jekyll
+#  first_name:
+#  desc: Transform your plain text into static websites and blogs.
+#  website: https://jekyllrb.com/
+#  email:
+#
+#- last_name: Wang
+#  first_name: Liqiang
+#  desc: An associate professor in the Department of Computer Science at the University of Central Florida.
+#  website: http://www.cs.ucf.edu/~lwang/
+#  email: lwang@cs.ucf.edu

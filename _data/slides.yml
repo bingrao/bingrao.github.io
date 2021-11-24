@@ -1,8 +1,0 @@
-# inSlider section
-# custom following lines to add your slide content in the inSlider section.
-
-- id: slide_1
-  type: image
-  active: active
-  src: static/assets/img/landing/slides/header_one.jpg
-  css: header-back
