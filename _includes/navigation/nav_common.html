@@ -24,15 +24,27 @@
           {% for section in site.data.landing %}
           <li>
             {% if page.title != 'index' and (section.id == 'blog' or section.id == 'publication') %}
-              {% assign section_id= section.id | prepend: "/" | prepend: site.baseurl %}
+              {% assign section_id = section.id | prepend: "/" | prepend: site.baseurl %}
             {% else %}
-              {% assign section_id= section.id | prepend: "/#" | prepend: site.baseurl %}
+              {% assign section_id = section.id | prepend: "/#" | prepend: site.baseurl %}
             {% endif %}
             <a class="page-scroll" href="{{ section_id }}">
-              <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
+              <span data-i18n="{{ section.i18n }}">
+                {{ section.name }}
+              </span>
             </a>
           </li>
+
+          {% if section.id == 'about-me' %}
+          <li>
+            <a href="{{ site.author.cv | prepend: site.baseurl}}" target="blank">
+              <span data-i18n="nav.cv">CV</span>
+            </a>
+          </li>
+          {% endif %}
+
           {% endfor %}
+
           {% for language in site.data.index.language %}
           <li>
             <a id="set_lang_{{ language.locale }}" class="btn btn-sm set_{{ language.locale }}" data-locale="{{ language.locale }}">

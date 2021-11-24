@@ -1,6 +1,6 @@
 # Website settings
-title: Bing
-description: Bing's blog, which is based on github pages and jekyll tools
+title: Bingbing Rao
+description: Bingbing Rao's personal site
 keywords: Bing, UCF, Jekyll, github
 baseurl: # if you have suburl as homepage like '/homepage', please change it to '/homepage' and your repo's name should be 'homepage'
 url: http://bingrao.github.io  # url should be 'http://<github_username>.github.io/homepage' as before
@@ -9,8 +9,8 @@ img_path: static/assets/img/blog  # url should be '/homepage/static/assets/img/b
 
 # author -- index page "about me" section
 author:             # change following line to your infomation.
-  name: Bing        # Be used at blog posts' author.
-  first_name: Bing  # Be used at index page about me section.
+  name: Bingbing Rao        # Be used at blog posts' author.
+  first_name: Bingbing  # Be used at index page about me section.
   last_name: Rao    # Be used at index page about me section.
   avatar: static/assets/img/landing/bing.jpg  # upload your avatar at directory and edit it.
   github_username: bingrao  # Leave blank if you don't have now
