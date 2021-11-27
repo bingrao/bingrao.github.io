@@ -23,12 +23,12 @@
         <ul class="nav navbar-nav navbar-right" id="i18_navbar">
           {% for section in site.data.landing %}
           <li>
-            {% if page.title != 'index' and (section.id == 'blog' or section.id == 'publication') %}
+            {% if page.title != 'index' and section.id == 'blog' %}
               {% assign section_id = section.id | prepend: "/" | prepend: site.baseurl %}
             {% else %}
               {% assign section_id = section.id | prepend: "/#" | prepend: site.baseurl %}
             {% endif %}
-            <a class="page-scroll" href="{{ section_id }}">
+            <a class="page-scroll" href="{{ section_id }}" style="color:black">
               <span data-i18n="{{ section.i18n }}">
                 {{ section.name }}
               </span>
@@ -37,7 +37,7 @@
 
           {% if section.id == 'about-me' %}
           <li>
-            <a href="{{ site.author.cv | prepend: site.baseurl}}" target="blank">
+            <a href="{{ site.author.cv | prepend: "/" | prepend: site.baseurl}}" style="color:black">
               <span data-i18n="nav.cv">CV</span>
             </a>
           </li>

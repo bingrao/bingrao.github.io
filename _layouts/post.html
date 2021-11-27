@@ -24,7 +24,7 @@ layout: default
           <ul class="nav navbar-nav navbar-right">
             {% for section in site.data.landing %}
             <li>
-              {% if section.id == 'blog' or section.id == 'publication' %}
+              {% if section.id == 'blog' %}
                 {% assign section_id= section.id | prepend: "/" | prepend: site.baseurl %}
               {% else %}
                 {% assign section_id= section.id | prepend: "/#" | prepend: site.baseurl %}
@@ -33,6 +33,13 @@ layout: default
                 <span data-i18n="{{ section.i18n }}">{{ section.name }}</span>
               </a>
             </li>
+              {% if section.id == 'about-me' %}
+                <li>
+                    <a href="{{ site.author.cv | prepend: "/" | prepend: site.baseurl}}">
+                        <span data-i18n="nav.cv">CV</span>
+                    </a>
+                </li>
+              {% endif %}
             {% endfor %}
             {% for language in site.data.index.language %}
             <li>

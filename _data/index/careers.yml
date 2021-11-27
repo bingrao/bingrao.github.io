@@ -1,11 +1,127 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
+    detail: Wuhan University of Science and Technology, Wuhan, Hubei, China
+    i18n: bs
+    href: https://www.wust.edu.cn/english/
+  desc:
+    detail: I was pursuing my bachelor of science (BS) in Electrical & Information Engineering at Wuhan University of Science and Technology.
+    i18n: bs_desc
+  date:
+    detail: Sep. 2008 to Jun. 2012
+    i18n: bs_date
+  job:
+    detail:
+    i18n: bs_job
+  icon: fa-paw
+
+- name:
+    detail: Wuhan University of Science and Technology, Wuhan, Hubei, China
+    i18n: under_ra
+    href: https://www.ucf.edu/
+  desc:
+    detail: I was a undergraduate student in Electrical & Information Engineering.
+      <ul list-style-position="inside" padding-left=0>
+        <li>Developed algorithms atop of microcontroller to generate arbitrary waveform using DDS chip</li>
+        <li>Designed FPGA algorithms to measure precise frequencies of input signals</li>
+        <li>Developed a digital storage oscilloscope (DSO) atop of FPGA to analyze input signals</li>
+        <li>Designed a digital circuit to perform Manchester decoding for encoded digital signals and tested transmission performance</li>
+      </ul>
+      <b>Key achievement:</b> Won the provincial third prize at 2011 National Undergraduate Electronics Design Contest
+    i18n: under_ra_desc
+  date:
+    detail: Sep. 2010 to Jun. 2012
+    i18n: under_ra_date
+  job:
+    detail: Undergraduate Research Assistant, Control Theory Laboratory
+    i18n: under_ra_job
+  icon: fa-paw
+
+- name:
+    detail: Huazhong University of Science and Technology, Wuhan, Hubei, China
+    i18n: ba
+    href: https://www.ucf.edu/
+  desc:
+    detail: I was pursuing my minor bachelor of arts (BA) in Public Administration at Huazhong University of Science and Technology.
+    i18n: ba_desc
+  date:
+    detail: Sep. 2010 to Jun. 2012
+    i18n: ba_date
+  job:
+    detail:
+    i18n: ba_job
+  icon: fa-paw
+
+- name:
+    detail: MacroSAN Technologies Co.,Ltd., Shenzhen, GD, China.
+    i18n: macrosan
+    href: http://www.macrosan.com/
+  desc:
+    detail: I worked at MacroSAN as a Driven Software Development Engineer to develop and maintain Linux kernel model, such as Direct Memory Access(DMA) and MSGPIO network models.
+      <ul>
+        <li>Developed Linux kernel modules including direct memory access (DMA), general-purpose in/out, and network bonding</li>
+        <li>Participated in the project of trim and transplant Linux kernel to maintain all product-related driver modules</li>
+        <li>Worked with Linux kernel upstream to provide efficient solutions to problems and errors related to the kernel</li>
+      </ul>
+      <b>Key achievement:</b> Awarded 22nd R & D Honor due to developing a new DMA model and strong problem-solving skills
+    i18n: macrosan_desc
+  date:
+    detail: February 2012 to March 2014
+    i18n: macrosan_date
+  job:
+    detail: Linux kernel develope, R & D Department
+    i18n: macrosan_job
+  icon: fa-paw
+
+- name:
+    detail: Elivebuy Co., Ltd., Shenzhen, GD, China
+    i18n: elivebuy
+    href: http://www.elivebuy.com/
+  desc:
+    detail: I worked at Elivebuy Co., Ltd., Shenzhen as an IT & Control Manager to develop and maintain collaborative office system; coordinate and manage sales and logistics deapartment.
+      <ul>
+        <li>Analyzed requirements of all departments to improve their business processes and determine the technology needs</li>
+        <li>Coordinated IT technicians to develop warehouse and finance management systems, a stock-keeping unit encoder, etc</li>
+        <li>Provided training programs about IT resources and development support to all staffs</li>
+      </ul>
+      <b>Key achievement:</b> Received the outstanding staff award in 2014 for coordinating IT resources to increase employee efficiency
+    i18n: elivebuy_desc
+  date:
+    detail: March. 2014 to Augest. 2015
+    i18n: elivebuy_date
+  job:
+    detail: Director, IT Department
+    i18n: elivebuy_job
+  icon: fa-paw
+
+- name:
+    detail: University of Central Florida, Orlando, FL, USA
+    i18n: ms
+    href: https://www.ucf.edu/
+  desc:
+    detail: I was pursuing my master of science (BA) in computer science at University of Central Florida.
+    i18n: ms_desc
+  date:
+    detail: Aug. 2015 to May. 2017
+    i18n: ms_date
+  job:
+    detail:
+    i18n: ms_job
+  icon: fa-paw
+
+- name:
     detail: University of Central Florida, Orlando, FL, USA
     i18n: ucf_phd
     href: https://www.ucf.edu/
   desc:
     detail: I am a PhD student who designs and analyzes parallel computing system for Big Data and Data-intensive Computing System under the supervision of <a href="http://www.cs.ucf.edu/~lwang/">Dr. Liqiang Wang</a>.
+      <ul>
+        <li>Design dynamic network activity models to characterize temporal trends in a large social-media network</li>
+        <li>Optimize performance and scalability of big data processing and parallel computing system</li>
+        <li>Detect and fix performance issues in data-intensive applications using program analyses techniques</li>
+        <li>Investigate the applicability of deep learning techniques comprehensively for repairing program bugs automatically</li>
+      </ul>
+      <b>Key achievement:</b> Published seven research papers and submitted two papers for peer review
     i18n: ucf_phd_desc
   date:
     detail: July. 2016 to Present
@@ -17,18 +133,24 @@
 
 
 - name:
-    detail: Unknot.id, Orlando, FL, USA
-    i18n: ucf_cilab
+    detail: University of Central Florida, Orlando, FL, USA
+    i18n: ucf_phd
     href: https://www.ucf.edu/
   desc:
-    detail: I was a master student in computer science.
-    i18n: ucf_master_desc
+    detail: I am a PhD student who designs and analyzes parallel computing system for Big Data and Data-intensive Computing System under the supervision of <a href="http://www.cs.ucf.edu/~lwang/">Dr. Liqiang Wang</a>.
+      <ul>
+        <li>Developed course materials including visual aids, answer keys, supplementary notes, and class projects</li>
+        <li>Co-taught lectures and lab sessions</li>
+        <li>Held office hours, led class discussions, and answered student questions to assist them with understanding complex concepts</li>
+        <li>Evaluated student projects, homework, exams, and other assignments</li>
+      </ul>
+    i18n: ucf_phd_desc
   date:
-    detail: July 2020 to Augest. 2021
-    i18n: ucf_cilab_date
+    detail: Aug. 2017 to Dec. 2018
+    i18n: ucf_phd_date
   job:
-    detail: Software Engineer Intern, AI Research
-    i18n: company_b_job
+    detail: Graduate Teaching Assistant, COP4020 Functional Programming Languages
+    i18n: ucf_phd_job
   icon: fa-paw
 
 
@@ -38,6 +160,12 @@
     href: https://www.ucf.edu/
   desc:
     detail: I was a master student in computer science.
+      <ul>
+        <li>Deployed Apache Spark, Hadoop clusters, and deep learning develop the environment</li>
+        <li>Improved redundancy and efficiency of the cluster network by designing new topology and bonding interfaces</li>
+        <li>Developed TF-IDF and other Spark data analytic applications for processing social media data (i.e. Twitter)</li>
+      </ul>
+      <b>Key achievement:</b> Provided systematic technical support for researchers to develop big data and deep learning algorithms
     i18n: ucf_master_desc
   date:
     detail: May. 2019 to Augest. 2019
@@ -48,47 +176,33 @@
   icon: fa-paw
 
 - name:
-    detail: University of Central Florida, Orlando, FL, USA
-    i18n: ucf_phd
+    detail: Unknot.id, Orlando, FL, USA
+    i18n: ucf_cilab
     href: https://www.ucf.edu/
   desc:
-    detail: I am a PhD student who designs and analyzes parallel computing system for Big Data and Data-intensive Computing System under the supervision of <a href="http://www.cs.ucf.edu/~lwang/">Dr. Liqiang Wang</a>.
-    i18n: ucf_phd_desc
-  date:
-    detail: Aug. 2017 to Dec. 2018
-    i18n: ucf_phd_date
-  job:
-    detail: Graduate Teaching Assistant, COP4020 Functional Programming Languages
-    i18n: ucf_phd_job
-  icon: fa-paw
+    detail: I was a master student in computer science. <br>
+      <b>Project 1.</b> A robust contextual Transformer network for Inertial Navigation
+      <ul>
+        <li>Innovated a robust Transformer-based model for inertial navigation using IMU measurements only</li>
+        <li>Designed a ResNet-based encoder to exploit spatial knowledge of IMU observations by applying attention mechanism</li>
+        <li>Extended Transformer decoder to capture temporal information within IMU observations</li>
+        <li>Leveraged multi-task learning techniques to improve learning efficiency and to reduce the model’s uncertainty</li>
+      </ul>
+      <b>Key achievement:</b> CTIN is submitted to AAAI-22 as a research paper due to its novelty and outperforming performance <br> <br>
 
-- name:
-    detail: Elivebuy Co., Ltd., Shenzhen, GD, China
-    i18n: elivebuy
-    href: http://www.elivebuy.com/
-  desc:
-    detail: I worked at Elivebuy Co., Ltd., Shenzhen as an IT & Control Manager to develop and maintain collaborative office system; coordinate and manage sales and logistics deapartment.
-    i18n: elivebuy_desc
+      <b>Project 2.</b> An improved GAN model to synthesize tabular data without leaking any sensitive information
+      <ul>
+        <li>Designed a model-specific encoder to transform category and continuous data into vector representations</li>
+        <li>Developed an enhanced GAN algorithm with information loss to learn data distribution</li>
+        <li>Generated fake data for downstream tasks from the learned distribution without leaking any sensitive information</li>
+        <li>Built a comprehensive evaluation tool to assess the performance in terms of data, utility, and privacy qualities</li>
+      </ul>
+      <b>Key achievement:</b> The developed GAN-based synthesizer has been adopted by multiple projects at Unknot.id
+    i18n: ucf_master_desc
   date:
-    detail: March. 2014 to Augest. 2015
-    i18n: elivebuy_date
+    detail: July 2020 to Augest. 2021
+    i18n: ucf_cilab_date
   job:
-    detail: Director, IT Department
-    i18n: elivebuy_job
-  icon: fa-paw
-
-
-- name:
-    detail: MacroSAN Technologies Co.,Ltd., Shenzhen, GD, China.
-    i18n: macrosan
-    href: http://www.macrosan.com/
-  desc:
-    detail: I worked at MacroSAN as a Driven Software Development Engineer to develop and maintain Linux kernel model, such as Direct Memory Access(DMA) and MSGPIO network models.
-    i18n: macrosan_desc
-  date:
-    detail: February 2012 to March 2014
-    i18n: macrosan_date
-  job:
-    detail: Linux kernel develope, R & D Department
-    i18n: macrosan_job
+    detail: Software Engineer Intern, AI Research
+    i18n: company_b_job
   icon: fa-paw
