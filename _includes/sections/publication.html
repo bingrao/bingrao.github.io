@@ -84,6 +84,9 @@
                       {%  if public.slide_link %}
                         [<a href="{{ public.slide_link | prepend: site.baseurl}}">Slides</a>]
                       {% endif %}
+                      {%  if public.code_link %}
+                        [<a href="{{ public.code_link | prepend: site.baseurl}}">Slides</a>]
+                      {% endif %}
                       {%  if public.pager_submit %}
                         [<a>Under Review</a>]
                       {% endif %}
