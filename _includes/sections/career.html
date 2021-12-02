@@ -16,10 +16,15 @@
                     </div>
                     <div class="vertical-timeline-content wow {% if loopindex == 1 %} rotateInUpRight {% else %} rotateInUpLeft {% endif %}">
                         <h2>
-                          <span data-i18n="career.{{ career.name.i18n }}">
-                              {{ career.name.detail }}
-                          </span>
+                            <span data-i18n="career.{{ career.name.i18n }}">
+                                <a href={{ career.name.href }} target="_blank">{{ career.name.detail }}</a>
+                            </span>
                         </h2>
+                        <small>
+                            <span data-i18n="career.{{ career.job.i18n }}">
+                              {{ career.job.detail }}
+                            </span>
+                          </small>
                         <p>
                           <span data-i18n="career.{{ career.desc.i18n }}">
                             {{ career.desc.detail }}
@@ -30,11 +35,7 @@
                             {{ career.date.detail }}
                           </span>
                           <br/>
-                          <small>
-                            <span data-i18n="career.{{ career.job.i18n }}">
-                              {{ career.job.detail }}
-                            </span>
-                          </small>
+                            <small>{{ career.date.location }}</small>
                         </span>
                     </div>
                 </div>

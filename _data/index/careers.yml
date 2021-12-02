@@ -1,14 +1,15 @@
 # careers section data
 # if you don't have language feature(language.yml is empty), ignore "i18n" items
 - name:
-    detail: Wuhan University of Science and Technology, Wuhan, Hubei, China
+    detail: Wuhan University of Science and Technology
     i18n: bs
     href: https://www.wust.edu.cn/english/
   desc:
     detail: I was pursuing my bachelor of science (BS) in Electrical & Information Engineering at Wuhan University of Science and Technology.
     i18n: bs_desc
   date:
-    detail: Sep. 2008 to Jun. 2012
+    detail: September 2008 to June 2012
+    location: Wuhan, Hubei, China
     i18n: bs_date
   job:
     detail:
@@ -16,7 +17,7 @@
   icon: fa-paw
 
 - name:
-    detail: Wuhan University of Science and Technology, Wuhan, Hubei, China
+    detail: Wuhan University of Science and Technology
     i18n: under_ra
     href: https://www.ucf.edu/
   desc:
@@ -30,7 +31,8 @@
       <b>Key achievement:</b> Won the provincial third prize at 2011 National Undergraduate Electronics Design Contest
     i18n: under_ra_desc
   date:
-    detail: Sep. 2010 to Jun. 2012
+    detail: September 2010 to June 2012
+    location: Wuhan, Hubei, China
     i18n: under_ra_date
   job:
     detail: Undergraduate Research Assistant, Control Theory Laboratory
@@ -38,14 +40,15 @@
   icon: fa-paw
 
 - name:
-    detail: Huazhong University of Science and Technology, Wuhan, Hubei, China
+    detail: Huazhong University of Science and Technology
     i18n: ba
     href: https://www.ucf.edu/
   desc:
     detail: I was pursuing my minor bachelor of arts (BA) in Public Administration at Huazhong University of Science and Technology.
     i18n: ba_desc
   date:
-    detail: Sep. 2010 to Jun. 2012
+    detail: September 2010 to June 2012
+    location: Wuhan, Hubei, China
     i18n: ba_date
   job:
     detail:
@@ -53,7 +56,7 @@
   icon: fa-paw
 
 - name:
-    detail: MacroSAN Technologies Co.,Ltd., Shenzhen, GD, China.
+    detail: MacroSAN Technologies Co.,Ltd.
     i18n: macrosan
     href: http://www.macrosan.com/
   desc:
@@ -67,6 +70,7 @@
     i18n: macrosan_desc
   date:
     detail: February 2012 to March 2014
+    location: Shenzhen, GD, China
     i18n: macrosan_date
   job:
     detail: Linux kernel develope, R & D Department
@@ -74,7 +78,7 @@
   icon: fa-paw
 
 - name:
-    detail: Elivebuy Co., Ltd., Shenzhen, GD, China
+    detail: Elivebuy Co., Ltd.
     i18n: elivebuy
     href: http://www.elivebuy.com/
   desc:
@@ -87,7 +91,8 @@
       <b>Key achievement:</b> Received the outstanding staff award in 2014 for coordinating IT resources to increase employee efficiency
     i18n: elivebuy_desc
   date:
-    detail: March. 2014 to Augest. 2015
+    detail: March 2014 to Augest 2015
+    location: Shenzhen, GD, China
     i18n: elivebuy_date
   job:
     detail: Director, IT Department
@@ -95,14 +100,15 @@
   icon: fa-paw
 
 - name:
-    detail: University of Central Florida, Orlando, FL, USA
+    detail: University of Central Florida
     i18n: ms
     href: https://www.ucf.edu/
   desc:
     detail: I was pursuing my master of science (BA) in computer science at University of Central Florida.
     i18n: ms_desc
   date:
-    detail: Aug. 2015 to May. 2017
+    detail: Augest 2015 to May 2017
+    location: Orlando, FL, USA
     i18n: ms_date
   job:
     detail:
@@ -110,7 +116,7 @@
   icon: fa-paw
 
 - name:
-    detail: University of Central Florida, Orlando, FL, USA
+    detail: University of Central Florida
     i18n: ucf_phd
     href: https://www.ucf.edu/
   desc:
@@ -124,7 +130,8 @@
       <b>Key achievement:</b> Published seven research papers and submitted two papers for peer review
     i18n: ucf_phd_desc
   date:
-    detail: July. 2016 to Present
+    detail: July 2016 to Present
+    location: Orlando, FL, USA
     i18n: ucf_phd_date
   job:
     detail: Graduate Research Assistant, Big Data Lab
@@ -133,7 +140,7 @@
 
 
 - name:
-    detail: University of Central Florida, Orlando, FL, USA
+    detail: University of Central Florida
     i18n: ucf_phd
     href: https://www.ucf.edu/
   desc:
@@ -146,7 +153,8 @@
       </ul>
     i18n: ucf_phd_desc
   date:
-    detail: Aug. 2017 to Dec. 2018
+    detail: Augest 2017 to December 2018
+    location: Orlando, FL, USA
     i18n: ucf_phd_date
   job:
     detail: Graduate Teaching Assistant, COP4020 Functional Programming Languages
@@ -155,7 +163,7 @@
 
 
 - name:
-    detail: University of Central Florida, Orlando, FL, USA
+    detail: University of Central Florida
     i18n: ucf_cilab
     href: https://www.ucf.edu/
   desc:
@@ -168,7 +176,8 @@
       <b>Key achievement:</b> Provided systematic technical support for researchers to develop big data and deep learning algorithms
     i18n: ucf_master_desc
   date:
-    detail: May. 2019 to Augest. 2019
+    detail: May 2019 to Augest 2019
+    location: Orlando, FL, USA
     i18n: ucf_cilab_date
   job:
     detail: System Engineer, Cyber Intelligence Lab
@@ -176,7 +185,7 @@
   icon: fa-paw
 
 - name:
-    detail: Unknot.id, Orlando, FL, USA
+    detail: Unknot.id
     i18n: ucf_cilab
     href: https://www.ucf.edu/
   desc:
@@ -200,7 +209,8 @@
       <b>Key achievement:</b> The developed GAN-based synthesizer has been adopted by multiple projects at Unknot.id
     i18n: ucf_master_desc
   date:
-    detail: July 2020 to Augest. 2021
+    detail: July 2020 to Augest 2021
+    location: Orlando, FL, USA
     i18n: ucf_cilab_date
   job:
     detail: Software Engineer Intern, AI Research
