@@ -1,0 +1,10 @@
+@article{chung2019interaction,
+  title={Interaction models for detecting nodal activities in temporal social media networks},
+  author={Chung, Wingyan and Rao, Bingbing and Wang, Liqiang},
+  journal={ACM Transactions on Management Information Systems (TMIS)},
+  volume={10},
+  number={4},
+  pages={1--30},
+  year={2019},
+  publisher={ACM New York, NY, USA}
+}

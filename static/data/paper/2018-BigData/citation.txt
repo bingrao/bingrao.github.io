@@ -1,0 +1,8 @@
+@inproceedings{liu2018reinforcement,
+  title={A reinforcement learning based resource management approach for time-critical workloads in distributed computing environment},
+  author={Liu, Zixia and Zhang, Hong and Rao, Bingbing and Wang, Liqiang},
+  booktitle={2018 IEEE International Conference on Big Data (Big Data)},
+  pages={252--261},
+  year={2018},
+  organization={IEEE}
+}

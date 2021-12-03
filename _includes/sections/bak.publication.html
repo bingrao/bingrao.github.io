@@ -63,7 +63,7 @@
                 <td style="width:45px">
                   <p>
                     <span>
-                      <a href="{{ public.org_href }}">{{ public.organization}}</a><o:p></o:p>
+                      <a href="{{ public.org_href }}">{{ public.organization }}</a><o:p></o:p>
                     </span>
                   </p>
                 </td>
@@ -77,28 +77,17 @@
                     <span><i>{{ public.booktitle }}</i></span>
                     <span><br></span>
                     </span>
-                      {%  if public.project_page %}
-                        <a href="{{ public.project_page | prepend: site.baseurl}}" target="_blank">[Project page]</a>
-                      {% endif %}
-
                       {%  if public.paper_link %}
-                        <a href="{{ public.paper_link | prepend: site.baseurl}}" target="_blank">[Paper]</a>
+                        [<a href="{{ public.paper_link | prepend: site.baseurl}}">PDF</a>]
                       {% endif %}
-
-                      {%  if public.pager_submit %}
-                        <a>[Under Review]</a>
-                      {% endif %}
-
                       {%  if public.slide_link %}
-                        <a href="{{ public.slide_link | prepend: site.baseurl}}" target="_blank">[Slide]</a>
+                        [<a href="{{ public.slide_link | prepend: site.baseurl}}">Slides</a>]
                       {% endif %}
-
                       {%  if public.code_link %}
-                        <a href="{{ public.code_link | prepend: site.baseurl}}" target="_blank">[Code]</a>
+                        [<a href="{{ public.code_link | prepend: site.baseurl}}">Slides</a>]
                       {% endif %}
-
-                      {%  if public.citation %}
-                        <a href="{{ public.citation | prepend: site.baseurl}}" target="_blank">[Citation]</a>
+                      {%  if public.pager_submit %}
+                        [<a>Under Review</a>]
                       {% endif %}
                     </span>
                 </td>

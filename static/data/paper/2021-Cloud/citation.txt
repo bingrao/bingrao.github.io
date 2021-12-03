@@ -1,0 +1,8 @@
+@inproceedings{rao2021soda,
+  title={SODA: A Semantics-Aware Optimization Framework for Data-Intensive Applications Using Hybrid Program Analysis},
+  author={Rao, Bingbing and Liu, Zixia and Zhang, Hong and Lu, Siyang and Wang, Liqiang},
+  booktitle={2021 IEEE 14th International Conference on Cloud Computing (CLOUD)},
+  pages={433--444},
+  year={2021},
+  organization={IEEE}
+}

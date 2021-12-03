@@ -1,0 +1,9 @@
+@article{lu2019ladra,
+  title={LADRA: Log-based abnormal task detection and root-cause analysis in big data processing with Spark},
+  author={Lu, Siyang and Wei, Xiang and Rao, Bingbing and Tak, Byungchul and Wang, Long and Wang, Liqiang},
+  journal={Future Generation Computer Systems},
+  volume={95},
+  pages={392--403},
+  year={2019},
+  publisher={Elsevier}
+}

@@ -23,7 +23,7 @@
 #  background: /blog/spark/spark.jpg
 #  desc: A fast and general engine for large-scale data processing.
 
-- name: Bigdata
+- name: Big Data
   href: /blog/bigdata/
   background: /blog/bigdata/bigdata.jpg
   desc: Involving in some issues about parallel computing in bigdata area.
@@ -38,10 +38,10 @@
   background: /blog/tool/tool.jpg
   desc: A summary of some useful tool kits that I encountered.
 
-- name: System
-  href: /blog/system/
-  background: /blog/system/system.jpg
-  desc: Introducing some interesting system.
+- name: Artificial Intelligence
+  href: /blog/ai/
+  background: /blog/ai/ai.jpg
+  desc: Introducing some interesting topics regarding artificial intelligence.
 
 #- name: Life
 #  href: /blog/life/

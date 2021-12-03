@@ -4,10 +4,13 @@
   booktitle: In IEEE International Conference on Software Testing, Verification and Validation (ICST), 2022
   organization: IEEE
   org_href:
+  img_link:
   paper_link:
   slide_link:
-  pager_submit: "Under Review"
+  project_page:
   code_link:
+#  citation: /static/data/paper/2022-ICST/citation.txt
+  pager_submit: "Under Review"
   year: "2022"
 
 - title: "CTIN: Robust Contextual Transformer Network for Inertial Navigation"
@@ -15,10 +18,12 @@
   booktitle: In Proceedings of the AAAI Conference on Artificial Intelligence, 2022
   organization: AAAI
   org_href:
-  paper_link:
+  paper_link: /static/data/paper/2022-AAAI/2022-AAAI-CTIN.pdf
   slide_link:
+  project_page:
+  code_link: https://github.com/bingrao/ctin
+  citation: /static/data/paper/2022-AAAI/citation.txt
   pager_submit:
-  code_link:
   year: "2022"
 
 - title: "SODA: A Semantics-Aware Optimization Framework for Data-Intensive Applications Using Hybrid Program Analysis"
@@ -26,9 +31,13 @@
   booktitle: In IEEE 14th International Conference on Cloud Computing (CLOUD), pages 433–444, 2021.
   organization: IEEE
   org_href:
+  img_link:
   paper_link: https://arxiv.org/abs/2107.11536
-  slide_link: /static/data/CLD_REG_169_Bingbing_Rao_slides.ppt
+  slide_link: /static/data/paper/2021-Cloud/CLD_REG_169_Bingbing_Rao_slides.ppt
+  project_page:
   code_link:
+  citation: /static/data/paper/2021-Cloud/citation.txt
+  pager_submit:
   year: "2021"
 
 - title: Interaction models for detecting nodal activities in temporal social media networks
@@ -36,9 +45,13 @@
   booktitle: ACM Transactions on Management Information Systems (TMIS), 10(4):1–30, 2019.
   organization: ACM
   org_href:
-  paper_link: /static/data/TMIS2019.pdf
+  img_link:
+  paper_link: /static/data/paper/2019-TIMS/TMIS2019.pdf
   slide_link:
+  project_page:
   code_link:
+  citation: /static/data/paper/2019-TIMS/citation.txt
+  pager_submit:
   year: "2019"
 
 
@@ -47,9 +60,13 @@
   booktitle: Future Generation Computer Systems, 95:392–403, 2019
   organization: Elsevier
   org_href:
-  paper_link: /static/data/FGCS-2019.pdf
+  img_link:
+  paper_link: /static/data/paper/2019-FGCS/FGCS-2019.pdf
   slide_link:
+  project_page:
   code_link:
+  citation: /static/data/paper/2019-FGCS/citation.txt
+  pager_submit:
   year: "2019"
 
 
@@ -58,9 +75,13 @@
   booktitle: In IEEE International Conference on Big Data (Big Data), pages 252–261, 2018
   organization: IEEE
   org_href: https://cci.drexel.edu/bigdata/bigdata2018/
-  paper_link: /static/data/2018-BigData.pdf
+  img_link:
+  paper_link: /static/data/paper/2018-BigData/2018-BigData.pdf
   slide_link:
+  project_page:
   code_link:
+  citation: /static/data/paper/2018-BigData/citation.txt
+  pager_submit:
   year: "2018"
 
 
@@ -68,10 +89,14 @@
   author: <b>Bingbing Rao</b>, Liqiang Wang
   booktitle: In IEEE Cyber Science and Technology Congress (CyberSciTech), pages 81–88, 2017
   organization: IEEE
-  org_href: http://cyber-science.org/2019/picom/
+  org_href: http://cyber-science.org/2017/
+  img_link:
   paper_link: https://arxiv.org/abs/2107.11540
   slide_link:
+  project_page:
   code_link:
+  citation: /static/data/paper/2017-CyberSciTech/citation.txt
+  pager_submit:
   year: "2017"
 
 - title: Log-based Abnormal Task Detection and Root Cause Analysis for Spark
@@ -79,9 +104,12 @@
   booktitle: In the the 24th IEEE International Conference on Web Services (ICWS), pages 389–396, 2017.
   organization: IEEE
   org_href: http://icws.org/2017/
-  paper_link: /static/data/ICWS2017.pdf
+  paper_link: /static/data/paper/2017-ICWS/ICWS2017.pdf
   slide_link:
+  project_page:
   code_link:
+  citation: /static/data/paper/2017-ICWS/citation.txt
+  pager_submit:
   year: "2017"
 
 - title: Dynamic Trend Detection in U.S. Border Security Social-Media Networks
@@ -89,7 +117,11 @@
   booktitle: In Interservice/Industry Training, Simulation and Education Conference, 2016
   organization: I/ITSEC
   org_href: http://www.iitsec.org/
-  paper_link: /static/data/ITSEC2016.pdf
-  slide_link: /static/data/nettrend-16248_IITSEC16.pptx
+  img_link:
+  paper_link: /static/data/paper/2016-ITSEC/ITSEC2016.pdf
+  slide_link: /static/data/paper/2016-ITSEC/nettrend-16248_IITSEC16.pptx
+  project_page:
   code_link:
+  citation: /static/data/paper/2016-ITSEC/citation.txt
+  pager_submit:
   year: "2016"

@@ -1,0 +1,8 @@
+@inproceedings{rao2017survey,
+  title={A Survey of Semantics-Aware Performance Optimization for Data-Intensive Computing},
+  author={Rao, Bingbing and Wang, Liqang},
+  booktitle={2017 IEEE 15th Intl Conf on Dependable, Autonomic and Secure Computing, 15th Intl Conf on Pervasive Intelligence and Computing, 3rd Intl Conf on Big Data Intelligence and Computing and Cyber Science and Technology Congress (DASC/PiCom/DataCom/CyberSciTech)},
+  pages={81--88},
+  year={2017},
+  organization={IEEE}
+}

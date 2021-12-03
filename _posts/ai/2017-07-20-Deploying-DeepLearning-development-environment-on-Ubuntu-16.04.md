@@ -4,7 +4,7 @@ title: Deploying DeepLearnig development environment on Ubuntu 16.04
 
 layout: post
 
-categories: [System]
+categories: [Ai]
 
 sub_class: DeepLearnig
 

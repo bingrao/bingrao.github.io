@@ -28,7 +28,7 @@ author:             # change following line to your infomation.
   skill_icon2:
     - name: fa-linux
     - name: icon-apache
-  desc: 'I am  a PhD candidate at the University of Central Florida, advised by <a href="http://www.cs.ucf.edu/~lwang/">Prof. Liqiqiang Wang</a>. My research interest focus on Big Data System optimizations and Automated Big Code Neural Repair. <br><br><h2 style="color:Red;"> Update: I am currently looking for software develop engineer positions. Please feel free to contact me if you have opening positions.</h2>'
+  desc: 'I am  a PhD candidate at the University of Central Florida, advised by <a href="http://www.cs.ucf.edu/~lwang/">Prof. Liqiqiang Wang</a>. My research interest focus on Big Data System optimizations and Automated Big Code Neural Repair. <br><br><h2 style="color:Red;"> <b>Update: I am currently looking for software develop engineer positions. Please feel free to contact me if you have opening positions.</b></h2>'
 
 #For the aspect of design,I am currently working on optimizing performance, resilience of data-intensive computing. For the aspect of analysis, I focus on using program analysis to detect programming errors and performance defects in large-scale parallel computing systems.
 

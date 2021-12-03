@@ -1,0 +1,7 @@
+@inproceedings{rao2022ctin,
+  title={CTIN: Robust Contextual Transformer Network for Inertial Navigation},
+  author={Rao, Bingbing and Kazemi, Ehsan and Ding, Yifan and Shila, Devu and and Tucker, Frank and Wang, Liqiang},
+  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
+  pages={},
+  year={2022},
+}

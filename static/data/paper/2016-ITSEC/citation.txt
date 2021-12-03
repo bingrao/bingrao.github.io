@@ -1,0 +1,6 @@
+@inproceedings{chung2016dynamic,
+  title={Dynamic trend detection in us border security social-media networks},
+  author={Chung, Wingyan and Rao, B and Wang, Liqiang},
+  booktitle={Simulation and Education Conference (I/ITSEC), In 2016 Interservice/Industry Training},
+  year={2016}
+}
