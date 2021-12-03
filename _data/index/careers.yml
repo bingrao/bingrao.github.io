@@ -19,17 +19,9 @@
 - name:
     detail: Wuhan University of Science and Technology
     i18n: under_ra
-    href: https://www.ucf.edu/
+    href: https://www.wust.edu.cn/english/
   desc:
-#    detail: I was a undergraduate student in Electrical & Information Engineering.
-#      <ul list-style-position="inside" padding-left=0>
-#        <li>Developed algorithms atop of microcontroller to generate arbitrary waveform using DDS chip</li>
-#        <li>Designed FPGA algorithms to measure precise frequencies of input signals</li>
-#        <li>Developed a digital storage oscilloscope (DSO) atop of FPGA to analyze input signals</li>
-#        <li>Designed a digital circuit to perform Manchester decoding for encoded digital signals and tested transmission performance</li>
-#      </ul>
-    detail: I designed and developed embedding algorithms of microcontroller and FPGA to generate arbitrary waveform and measure precise frequencies of input signals, respectively.
-      <br><b>Key achievement:</b> Won the provincial third prize at 2011 National Undergraduate Electronics Design Contest
+    detail: Designed embedding algorithms of microcontroller and FPGA to generate arbitrary waveform and measure precise frequencies of input signals; Won the provincial third prize at 2011 National Undergraduate Electronics Design Contest
     i18n: under_ra_desc
   date:
     detail: September 2010 to June 2012
@@ -43,7 +35,7 @@
 - name:
     detail: Huazhong University of Science and Technology
     i18n: ba
-    href: https://www.ucf.edu/
+    href: http://english.hust.edu.cn/
   desc:
     detail: I was pursuing my minor bachelor of arts (B.A.) in Public Administration at Huazhong University of Science and Technology.
     i18n: ba_desc
@@ -61,18 +53,11 @@
     i18n: macrosan
     href: http://www.macrosan.com/
   desc:
-#    detail: I worked at MacroSAN as a Driven Software Development Engineer to develop and maintain Linux kernel model, such as Direct Memory Access(DMA) and MSGPIO network models.
-##      <ul>
-##        <li>Developed Linux kernel modules including direct memory access (DMA), general-purpose in/out, and network bonding</li>
-##        <li>Participated in the project of trim and transplant Linux kernel to maintain all product-related driver modules</li>
-##        <li>Worked with Linux kernel upstream to provide efficient solutions to problems and errors related to the kernel</li>
-##      </ul>
-    detail: I was responsible to design and maintain Linux kernel model, such as Direct Memory Access(DMA) and general-purpos IO/OUT, as well as work with Linux kernel upstream to provide efficient solutions to problems and errors related to the kernel.
-      <br><b>Key achievement:</b> Awarded 22nd R & D Honor due to developing a new DMA model and strong problem-solving skills
+    detail: Awarded 22𝑛𝑑 R & D Honor due to developing a new and faster direct memory access (DMA) model and collaborating with Linux kernel upstream on providing efficient solutions to the Linux kernel issues
     i18n: macrosan_desc
   date:
     detail: February 2012 to March 2014
-    location: Shenzhen, GD, China
+    location: Shenzhen, Guangdong, China
     i18n: macrosan_date
   job:
     detail: Linux kernel developer, R & D Department
@@ -84,18 +69,11 @@
     i18n: elivebuy
     href: http://www.elivebuy.com/
   desc:
-#    <ul>
-#    <li>Analyzed requirements of all departments to improve their business processes and determine the technology needs</li>
-#    <li>Coordinated IT technicians to develop warehouse and finance management systems, a stock-keeping unit encoder, etc</li>
-#    <li>Provided training programs about IT resources and development support to all staffs</li>
-#    </ul>
-#    worked at Elivebuy Co., Ltd., Shenzhen as a director of IT Department to develop and maintain collaborative office system; coordinate and manage sales and logistics deapartment.
-    detail: As the director of IT department, I was responsible to 1) analyze requirements of all departments to improve their business processes and determine the technology needs; 2) coordinate IT technicians to develop warehouse and finance management systems, a stock-keeping unit encoder, etc
-      <br><b>Key achievement:</b> Received the outstanding staff award in 2014 for coordinating IT resources to increase employee efficiency
+    detail: Analyzed requirements of all departments to improve their business processes and determine the technology needs; Received the outstanding staff award in 2014 for coordinating IT resources to increase employee efficiency
     i18n: elivebuy_desc
   date:
     detail: March 2014 to Augest 2015
-    location: Shenzhen, GD, China
+    location: Shenzhen, Guangdong, China
     i18n: elivebuy_date
   job:
     detail: Director, IT Department
@@ -107,7 +85,7 @@
     i18n: ms
     href: https://www.ucf.edu/
   desc:
-    detail: I was pursuing my master of science (BA) in computer science at University of Central Florida.
+    detail: I was pursuing my master of science (M.S.) in computer science at University of Central Florida.
     i18n: ms_desc
   date:
     detail: Augest 2015 to May 2017
@@ -120,49 +98,36 @@
 
 - name:
     detail: University of Central Florida
-    i18n: ucf_phd
+    i18n: ucf_ra_phd
     href: https://www.ucf.edu/
   desc:
-#    <ul>
-#    <li>Design dynamic network activity models to characterize temporal trends in a large social-media network</li>
-#    <li>Optimize performance and scalability of big data processing and parallel computing system</li>
-#    <li>Detect and fix performance issues in data-intensive applications using program analyses techniques</li>
-#    <li>Investigate the applicability of deep learning techniques comprehensively for repairing program bugs automatically</li>
-#    </ul>
-    detail: I am a PhD candidate who designs and analyzes parallel computing system for Big Data and Data-intensive Computing System under the supervision of <a href="http://www.cs.ucf.edu/~lwang/">Dr. Liqiang Wang</a>.
-      <br><b>Key achievement:</b> Published seven research papers and submitted two papers for peer review
-    i18n: ucf_phd_desc
+    detail: Innovating techniques of program analysis and deep learning (e.g., Transformer, RNN, ResNet) towards efficient and intelligent big data systems (e.g., Apache Spark) as well as neural repair models for big code
+    i18n: ucf_phd_ra_desc
   date:
-    detail: July 2016 to Present
+    detail: July 2016 to May 2022 (Expected)
     location: Orlando, FL, USA
-    i18n: ucf_phd_date
+    i18n: ucf_phd_ra_date
   job:
     detail: Graduate Research Assistant, Big Data Lab
-    i18n: ucf_phd_job
-  icon: fa-paw
+    i18n: ucf_phd_ra_job
+  icon: fa-graduation-cap
 
 
 - name:
     detail: University of Central Florida
-    i18n: ucf_phd
+    i18n: ucf_phd_ta
     href: https://www.ucf.edu/
   desc:
-#    <ul>
-#    <li>Developed course materials including visual aids, answer keys, supplementary notes, and class projects</li>
-#    <li>Co-taught lectures and lab sessions</li>
-#    <li>Held office hours, led class discussions, and answered student questions to assist them with understanding complex concepts</li>
-#    <li>Evaluated student projects, homework, exams, and other assignments</li>
-#    </ul>
     detail: I worked as a graduate teaching assistant for the course of COP4020 Functional Programming Languages
-    i18n: ucf_phd_desc
+    i18n: ucf_phd_ta_desc
   date:
     detail: Augest 2017 to December 2018
     location: Orlando, FL, USA
     i18n: ucf_phd_date
   job:
     detail: Graduate Teaching Assistant, COP4020 Functional Programming Languages
-    i18n: ucf_phd_job
-  icon: fa-graduation-cap
+    i18n: ucf_phd_ta_job
+  icon: fa-paw
 
 
 - name:
@@ -170,13 +135,7 @@
     i18n: ucf_cilab
     href: https://www.ucf.edu/
   desc:
-#    <ul>
-#    <li>Deployed Apache Spark, Hadoop clusters, and deep learning develop the environment</li>
-#    <li>Improved redundancy and efficiency of the cluster network by designing new topology and bonding interfaces</li>
-#    <li>Developed TF-IDF and other Spark data analytic applications for processing social media data (i.e. Twitter)</li>
-#    </ul>
-    detail: I worked as a system engineer in Cyber Intelligence Lab to 1) deploy big data and deep learning clusters; 2) develop Apache Spark  data analytic applications (e.g., TF-IDF) for processing social media data (i.e. Twitter)
-      <br><b>Key achievement:</b> Provided systematic technical support for researchers to develop big data and deep learning algorithms
+    detail: Deployed and maintained big data (e.g., Apache Spark) and deep learning infrastructures for researchers; provided systematic technical support in developing efficient algorithms of big data and deep learning to perform social media analytics tasks
     i18n: ucf_master_desc
   date:
     detail: May 2019 to Augest 2019
@@ -190,27 +149,9 @@
 - name:
     detail: Unknot.id
     i18n: ucf_cilab
-    href: https://www.ucf.edu/
+    href: https://www.unknot.id/
   desc:
-#    detail: I was a master student in computer science. <br>
-#      <b>Project 1.</b> A robust contextual Transformer network for Inertial Navigation
-#      <ul>
-#        <li>Innovated a robust Transformer-based model for inertial navigation using IMU measurements only</li>
-#        <li>Designed a ResNet-based encoder to exploit spatial knowledge of IMU observations by applying attention mechanism</li>
-#        <li>Extended Transformer decoder to capture temporal information within IMU observations</li>
-#        <li>Leveraged multi-task learning techniques to improve learning efficiency and to reduce the model’s uncertainty</li>
-#      </ul>
-#      <b>Key achievement:</b> CTIN is submitted to AAAI-22 as a research paper due to its novelty and outperforming performance <br> <br>
-#
-#      <b>Project 2.</b> An improved GAN model to synthesize tabular data without leaking any sensitive information
-#      <ul>
-#        <li>Designed a model-specific encoder to transform category and continuous data into vector representations</li>
-#        <li>Developed an enhanced GAN algorithm with information loss to learn data distribution</li>
-#        <li>Generated fake data for downstream tasks from the learned distribution without leaking any sensitive information</li>
-#        <li>Built a comprehensive evaluation tool to assess the performance in terms of data, utility, and privacy qualities</li>
-#      </ul>
-    detail: I worked as a software engineer to design and develop AI-based algorihtms for inertial navigation using IMU measurements and synthesizing tabular data without leaking any sensitive information.
-      <br><b>Key achievement:</b> A robust contextual Transformer network for Inertial Navigation is s formed as a research paper accepted by AAAI-22 due to its novelty and outperforming performance; The developed GAN-based synthesizer has been adopted by multiple projects at Unknot.id
+    detail: Investigated Transformer-based and GAN-based neural models for inertial navigation using IMU measurements and synthesizing tabular data without leaking any sensitive information, respectively
     i18n: ucf_master_desc
   date:
     detail: July 2020 to Augest 2021
