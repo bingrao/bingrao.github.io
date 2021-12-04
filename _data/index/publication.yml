@@ -20,7 +20,7 @@
   org_href:
   paper_link: /static/data/paper/2022-AAAI/2022-AAAI-CTIN.pdf
   slide_link:
-  project_page:
+  project_page: /blog/post/2021/12/03/Robust-Contextual-Transformer-Network-for-Inertial-Navigation.html
   code_link: https://github.com/bingrao/ctin
   citation: /static/data/paper/2022-AAAI/citation.txt
   pager_submit:
