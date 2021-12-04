@@ -75,7 +75,18 @@ layout: default
                           <span class="text-muted"><i class="fa fa-clock-o">
                             </i>{{ page.date | date: "%-d %b %Y" }}
                           </span>
+                            <hr>
+                            <span><div class="btn-group" role="group" aria-label="Top menu">
+                                {% if page.paper %}
+                                    <a class="btn btn-primary" href="{{ page.paper | prepend: site.baseurl}}">Paper</a>
+                                {% endif %}
+
+                                {% if page.code %}
+                                <a class="btn btn-primary" href="{{ page.code | prepend: site.baseurl}}">Code</a>
+                                {% endif %}
+                            </div></span>
                         </div>
+
                         {{ content }}
                         <hr>
                         <div class="row">

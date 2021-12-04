@@ -6,7 +6,7 @@ layout: post
 
 categories: [Tool, Ai, Bigdata]
 
-sub_class: ocr
+sub_class: OCR
 
 tags: [Tesseract, OCR, Ubuntu]
 
@@ -17,6 +17,10 @@ desc: A tutorial about how to install Tesseract 4.0 from source code in Ubuntu 1
 date: 2017-07-16
 
 author: Bing
+
+paper:
+
+code:
 
 ---
 

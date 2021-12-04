@@ -1,18 +1,18 @@
 ---
 
-title: Deploying DeepLearnig development environment on Ubuntu 16.04
+title: Deploying Deep Learning development environment on Ubuntu 16.04
 
 layout: post
 
 categories: [Ai]
 
-sub_class: DeepLearnig
+sub_class: Infrastructure
 
 tags: [DeepLearning, gpu, cuda, GTX1080, theano, TensorFlow]
 
 keywords: DeepLearning, gpu, cuda, GTX1080, theano, TensorFlow
 
-desc: Introducing how to deploy a development environment for DeepLearning based on GTX 1080 and Ubuntun 16.04.
+desc: Introducing how to deploy a development environment for DeepLearning based on GTX 1080 and Ubuntu 16.04.
 
 date: 2017-07-20
 
