@@ -18,7 +18,7 @@
   booktitle: In Proceedings of the AAAI Conference on Artificial Intelligence, 2022
   organization: AAAI
   org_href:
-  paper_link: /static/data/paper/2022-AAAI/2022-AAAI-CTIN.pdf
+  paper_link: https://arxiv.org/abs/2112.02143
   slide_link:
   project_page: /blog/post/2021/12/03/Robust-Contextual-Transformer-Network-for-Inertial-Navigation.html
   code_link: https://github.com/bingrao/ctin

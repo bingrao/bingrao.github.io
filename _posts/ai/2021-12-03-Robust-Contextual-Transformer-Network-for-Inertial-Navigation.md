@@ -18,7 +18,7 @@ date: 2021-12-03
 
 author: Bing
 
-paper: "/static/data/paper/2022-AAAI/2022-AAAI-CTIN.pdf"
+paper: "https://arxiv.org/abs/2112.02143"
 
 code: "https://github.com/bingrao/ctin"
 
