@@ -1,12 +1,13 @@
 # projects section data
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
-- name: Cyber Secutity
-  i18n: cybercode
-  gh_user: bingrao
-  repo: CyberSecuity
+- name: CTIN
+  i18n: ctin
+  gh_user:
+  repo:
+  url: /blog/post/2021/12/03/Robust-Contextual-Transformer-Network-for-Inertial-Navigation.html
   img: /static/assets/img/projects/cybersecuity.jpg
-  desc: A dynamic network activity model to characterize temporal trends of human agents activity
+  desc: A neural Transformer-based model for inertial navigation
 
 
 - name: Sentiment Analysis
@@ -16,12 +17,12 @@
   img: /static/assets/img/projects/sentiment.jpg
   desc: A machine learning model atop of Apache Spark to do some analysis on sentiment.
 
-- name: Scala AST
-  i18n: scala_ast
+- name: GTable
+  i18n: gtable
   gh_user: bingrao
-  repo: Scala-AST
+  repo: gtable
   img: /static/assets/img/projects/ast.png
-  desc: Extracting abstract syntax tree (AST) from Scala source code via Scala compiler.
+  desc: Generating synthetic tabular data by an improved GAN-based model
 
 
 - name: Spark Listener
@@ -46,9 +47,9 @@
   desc: This project build a analysis model atop of JastAdd to conduct static analysis on Scala language.
 
 
-- name: a plugin of eclipse
-  i18n: eclipse-archetype-plugin
-  gh_user: bingrao
-  repo: eclipse-archetype-plugin
-  img: /static/assets/img/projects/eclipse_plugin.jpg
-  desc: A archtype plugin of eclipse for Apache spark development.
+#- name: a plugin of eclipse
+#  i18n: eclipse-archetype-plugin
+#  gh_user: bingrao
+#  repo: eclipse-archetype-plugin
+#  img: /static/assets/img/projects/eclipse_plugin.jpg
+#  desc: A archtype plugin of eclipse for Apache spark development.

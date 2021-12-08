@@ -1,7 +1,7 @@
 # List publication.
 - title: "Bug2Fix: An Enhanced Transformer Model with Context-Aware Alignment for Automated Program Repair"
   author: <b>Bingbing Rao</b>, Jie Yao, Weiwei Xing, Liqiang Wang
-  booktitle: In IEEE International Conference on Software Testing, Verification and Validation (ICST), 2022
+  booktitle:
   organization: IEEE
   org_href:
   img_link:
