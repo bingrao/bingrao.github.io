@@ -148,7 +148,7 @@
 
 - name:
     detail: Unknot.id
-    i18n: ucf_cilab
+    i18n: unknot
     href: https://www.unknot.id/
   desc:
     detail: Investigated Transformer-based and GAN-based neural models for inertial navigation using IMU measurements and synthesizing tabular data without leaking any sensitive information, respectively
@@ -161,4 +161,22 @@
     detail: Software Engineer Intern, AI Research
 #    detail:
     i18n: company_b_job
+  icon: fa-paw
+
+
+- name:
+    detail: Citibank, N.A.
+    i18n: citi
+    href: https://www.citi.com/
+  desc:
+    detail: Design and optimize a framework for model driven computations using knowledge of compiler, graph and grid computing, data storage and access.
+    i18n: citi_desc
+  date:
+    detail: May 2022 to Augest Present
+    location: New York, NY, USA
+    i18n: citi_date
+  job:
+    detail: VP, Risk Analytics, Modeling, and Validation, Quant Risk Libraries (QRL)
+#    detail:
+    i18n: citi_job
   icon: fa-paw
