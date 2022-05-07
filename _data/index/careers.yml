@@ -104,7 +104,7 @@
     detail: Innovating techniques of program analysis and deep learning (e.g., Transformer, RNN, ResNet) towards efficient and intelligent big data systems (e.g., Apache Spark) as well as neural repair models for big code
     i18n: ucf_phd_ra_desc
   date:
-    detail: July 2016 to May 2022 (Expected)
+    detail: July 2016 to May 2022
     location: Orlando, FL, USA
     i18n: ucf_phd_ra_date
   job:
@@ -152,15 +152,15 @@
     href: https://www.unknot.id/
   desc:
     detail: Investigated Transformer-based and GAN-based neural models for inertial navigation using IMU measurements and synthesizing tabular data without leaking any sensitive information, respectively
-    i18n: ucf_master_desc
+    i18n: unknot_desc
   date:
-    detail: July 2020 to Augest 2021
+    detail: July 2020 to July 2021
     location: Orlando, FL, USA
-    i18n: ucf_cilab_date
+    i18n: unknot_date
   job:
     detail: Software Engineer Intern, AI Research
 #    detail:
-    i18n: company_b_job
+    i18n: unknot_job
   icon: fa-paw
 
 
